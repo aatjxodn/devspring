@@ -1,0 +1,30 @@
+@charset "UTF-8";
+
+/* --------------------- border --------------------- */
+#board {
+	width: 100%;
+	
+}
+.board_title {
+	
+}
+.board_title span {
+	font-size: 2rem;
+	font-weight: bold;
+}
+.board_table_area {
+	width: 95%;
+	margin: 0 auto;
+	height: 500px;
+	overflow-y: scroll; 
+	text-align: center;
+}
+.board_table {
+	width: 100%;
+}
+.board_table thead tr {
+	height: 50px;
+}
+.board_table tbody tr {
+	height: 50px;
+}

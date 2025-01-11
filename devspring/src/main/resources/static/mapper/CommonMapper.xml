@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.devspring.mapper.CommonMapper">
+
+    <select id="selectLnbList" resultType="com.spring.devspring.dto.LnbDTO">
+        SELECT	
+        	CT_LNB_IDX AS ctLnbIdx,
+        	CT_LNB_ID AS ctLnbId,
+        	CT_LNB_NAME AS ctLnbName,
+        	CT_LNB_SUB_YN AS ctLnbSubYn,
+        	CT_LNB_URL AS ctLnbUrl,
+        	CT_LNB_USE_YN AS ctLnbUseYn
+        FROM CT_LNB
+        WHERE CT_LNB_USE_YN = 'Y'
+        ORDER BY CT_LNB_IDX
+    </select>
+    
+    <select id="selectLnbSubList" resultType="com.spring.devspring.dto.LnbSubDTO">
+        SELECT	
+        	CT_LNB_SUB_IDX AS ctLnbSubIdx,
+        	CT_LNB_ID AS ctLnbId,
+        	CT_LNB_SUB_ID AS ctLnbSubId,
+        	CT_LNB_SUB_NAME AS ctLnbSubName,
+        	CT_LNB_SUB_URL AS ctLnbSubUrl
+        FROM CT_LNB_SUB
+        WHERE CT_LNB_ID = #{id}
+        ORDER BY CT_LNB_SUB_IDX
+    </select>
+    
+</mapper>

@@ -1,0 +1,117 @@
+@charset "UTF-8";
+
+/* --------------------- company title --------------------- */
+#company-title {
+	width: 100%;
+	position: relative;
+}
+.company-title-image {
+	width: 100%;
+	margin: 0 auto;
+}
+.company-title-image img {
+	width: 100%;
+	height: 300px;
+	border-bottom: 1px solid #aaaaaa;
+}
+.company-title-text {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.company-title-text h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.company-title-text span {
+	font-size: 1.7rem;
+	color: #fff;
+	opacity: 0.8;
+}
+
+/* --------------------- company sub title --------------------- */
+#company-sub-title {
+	width: 100%;
+	text-align: center;
+	margin: 50px auto 0 auto;
+}
+#company-sub-title h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	color: #333333;
+}
+#company-sub-content {
+	width: 100%;
+	text-align: center;
+	margin: 50px auto 50px auto;
+}
+#company-sub-content table {
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
+}
+#company-sub-content table tr {
+	border-top: 1px solid #dddddd;
+}
+#company-sub-content table tr th {
+	font-size: 1.5rem;
+	font-weight: bold;
+	padding: 20px;
+}
+#company-sub-content table tr td {
+	padding: 20px;
+}
+#company-sub-content table tr td p {
+	font-size: 1rem;
+	line-height: 2;
+	opacity: 0.6;
+}
+
+
+
+/* --------------------- 반응형 --------------------- */
+@media (max-width: 500px) {
+	.company-title-text h2 {
+		font-size: 2rem;
+	}
+	.company-title-text span {
+		font-size: 1.2rem;
+	}
+	.company-title-image img {
+		height: 200px;
+	}
+	#company-sub-title h2 {
+		font-size: 2rem;
+	}
+	#company-sub-content table tr th {
+		font-size: 1rem;
+	}
+	#company-sub-content table tr td p {
+		font-size: 0.7rem;
+	}
+}
+
+
+/* Extra small (모바일 - 작은 화면) */
+@media (max-width: 575px) {
+}
+
+/* Small (모바일 - 일반 크기) */
+@media (min-width: 576px) and (max-width: 767px) {
+}
+
+/* Medium (태블릿) */
+@media (min-width: 768px) and (max-width: 991px) {
+}
+
+/* Large (작은 데스크탑) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+
+/* Extra large (일반 데스크탑) */
+@media (min-width: 1200px) {
+}

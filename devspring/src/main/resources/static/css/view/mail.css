@@ -1,0 +1,137 @@
+@charset "UTF-8";
+
+/* --------------------- mail title --------------------- */
+#mail-title {
+	width: 100%;
+	position: relative;
+}
+.mail-title-image {
+	width: 100%;
+	position: relative;
+}
+.mail-title-image img {
+	width: 100%;
+	height: 300px;
+	border-bottom: 1px solid #aaaaaa;
+}
+.mail-title-text {
+	position: absolute;
+	top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+}
+.mail-title-text h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.mail-title-text span {
+	font-size: 1.7rem;
+	color: #fff;
+	opacity: 0.8;
+}
+
+/* --------------------- mail sub title --------------------- */
+#mail-sub-title {
+	width: 100%;
+	text-align: center;
+	margin: 50px auto 0 auto;
+}
+#mail-sub-title h2 {
+	font-size: 3rem;
+	font-weight: bold;
+	color: #333333;
+	margin-bottom: 20px;
+}
+#mail-sub-title span {
+	font-size: 1.4rem;
+	opacity: 0.6;
+}
+
+/* --------------------- mail table form --------------------- */
+#mail-form {
+	width: 100%;
+	margin: 50px auto 50px auto;
+	text-align: center;
+}
+#mail-form table {
+	width: 70%;
+	margin: 0 auto;
+}
+#mail-form table tr:first-child {
+	border-top: 1px solid #999999;
+}
+#mail-form table tr {
+	border-top: 1px solid #dddddd;
+	height: 80px;
+	line-height: 80px;
+}
+#mail-form table tr th {
+	border-right: 1px solid #dddddd;
+	background-color: #f6f6f6;
+	font-weight: bold;
+}
+#mail-form table tr th span {
+	color: red;
+}
+#mail-form table tr td input {
+	outline: none;
+    display: block;
+	margin: 0 0 0 20px;
+	padding: 15px 150px 15px 15px;
+	border: 1px solid #dddddd;
+	color: #999999;
+}
+#mail-form table tr td textarea {
+	outline: none;
+	width: 100%;
+	height: 300px;
+	border: 1px solid #dddddd;
+	margin-top: 20px;
+	padding: 10px;
+	color: #000;
+}
+.mailBut {
+	border: 1px solid #26456d;
+	padding: 20px 100px;
+	background-color: #26456d;
+	color: #fff;
+	font-weight: bold;
+	cursor: pointer;
+	border-radius: 5px;
+}
+
+
+
+/* --------------------- 반응형 --------------------- */
+@media (max-width: 500px) {
+	.mail-title-text h2 {
+		font-size: 2rem;
+	}
+	.mail-title-text span {
+		font-size: 1.2rem;
+	}
+	.mail-title-image img {
+		height: 200px;
+	}
+	#mail-sub-title h2 {
+		font-size: 2rem;
+	}
+	#mail-sub-title span {
+		font-size: 1.2rem;
+	}
+	#mail-form {
+		width: 90%;
+	}
+	#mail-form table tr th {
+		min-width: 100px;
+		font-size: 0.8rem;
+	}
+	#mail-form table tr td input {
+		font-size: 0.8rem;
+		width: 250px;
+	}
+}
+

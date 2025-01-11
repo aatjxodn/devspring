@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+    <div th:fragment="header">
+    
+        <div id="header">
+        
+        	<!-- header 아이콘 -->
+        	<div class="header_icon">
+        		<span>Spring</span>
+        	</div>
+        	
+        	<!-- header 상단바 -->
+        	<div class="header_lnb">
+        		<ul class="lnb">
+        			
+        		</ul>
+        	</div>
+        	
+        	<!-- header 햄버거바 -->
+        	<div class="header_hamburger">
+        		<span>☰</span>
+        	</div>
+        	
+        	<!-- header 모바일 상단바 -->
+        	<div class="header_lnb_mob">
+        		<ul class="lnb_mob">
+        			
+        		</ul>
+        	</div>
+        	
+        </div>
+        
+        <!-- common js -->
+		<script type="text/javascript" th:src="@{/js/common/header.js}"></script>
+        
+    </div>
+</html>

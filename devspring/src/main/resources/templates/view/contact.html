@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{common/layout/layout}">
+
+    <div layout:fragment="content">
+    
+    	<div id="contact-title">
+    		<div class="contact-title-image">
+    			<img th:src="@{/images/contact.png}" alt="contact image">
+    		</div>
+    		<div class="contact-title-text">
+    			<h2>Contact</h2>
+    			<span>Korea Location - CeraTST</span>
+    		</div>
+    	</div>
+    	
+    	<div id="contact-sub-title">
+    		<h2>Location</h2>
+    	</div>
+    	
+    	<div id="kakaomap"></div>
+    	
+    	<div id="contact-info">
+    		<div class="contact-info-address">
+    			<span><b>address</b> : 22-3 Sindae-ri, Baeksa-myeon, Icheon-si, Gyeonggi-do</span>
+    		</div>
+    		<div class="contact-info-phone">
+    			<span><b>phone</b> : 010-5123-4880</span>
+    		</div>
+    		<div class="contact-info-fax">
+    			<span><b>fax</b> : 031-631-1234</span>
+    		</div>
+    		<div class="contact-info-email">
+    			<span><b>e-mail</b> : aatjxodn22@gmail.com</span>
+    		</div>
+    	</div>
+    	
+    	<!-- Kakao Map API -->
+    	<script type="text/javascript" th:src="|https://dapi.kakao.com/v2/maps/sdk.js?appkey=${KakaoAppKey}&libraries=services|"></script>
+    	<!-- contact js -->
+		<script type="text/javascript" th:src="@{/js/view/contact.js}"></script>
+	    
+    </div>
+
+</html>

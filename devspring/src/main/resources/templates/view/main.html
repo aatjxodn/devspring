@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout" layout:decorate="~{common/layout/layout}">
+
+    <div layout:fragment="content">
+		<div id="main-slider">
+		    <div class="main-slider-image">
+		        <div>
+		        	<img th:src="@{/images/mainBanner1.png}" alt="contact image">
+		        </div>
+		        <div>
+		        	<img th:src="@{/images/mainBanner2.png}" alt="contact image">
+		        </div>
+		        <div>
+		        	<img th:src="@{/images/mainBanner3.png}" alt="contact image">
+		        </div>
+		    </div>
+		    <div class="main-slider-text">
+		        <div>
+		        	<div style="font-size: 3rem; margin-bottom: 20px;">CeraTST. Main text1</div>
+		        	<div style="font-size: 1.5rem; opacity: 0.8;">CeraTST. Main text1</div>
+		        </div>
+		        <div>
+		        	<div style="font-size: 3rem; margin-bottom: 20px;">CeraTST. Main text2</div>
+		        	<div style="font-size: 1.5rem; opacity: 0.8;">CeraTST. Main text2</div>
+		        </div>
+		        <div>
+		        	<div style="font-size: 3rem; margin-bottom: 20px;">CeraTST. Main text3</div>
+		        	<div style="font-size: 1.5rem; opacity: 0.8;">CeraTST. Main text3</div>
+		        </div>
+		    </div>
+		</div>
+	    
+	    <div id="main-service">
+	    	<div class="main-service-title">
+	    		<div>
+	    			<h2>Service</h2>
+	    			<span>Services introduced by SeraTrust</span>
+	    		</div>
+	    	</div>
+	    	<div class="main-service-content">
+	    		<div>
+	    			<img>
+	    			<span>service1</span>
+	    		</div>
+	    		<div>
+	    			<img>
+	    			<span>service2</span>
+	    		</div>
+	    		<div>
+	    			<img>
+	    			<span>service3</span>
+	    		</div>
+	    		<div>
+	    			<img>
+	    			<span>service4</span>
+	    		</div>
+	    	</div>
+	    </div>
+	    
+	    <div id="main-contact">
+    		<div class="main-contact-image">
+    			<img th:src="@{/images/mainContact.png}" alt="main contact image">
+    		</div>
+    		<div class="main-contact-text">
+    			<h2>Contact</h2>
+    			<span>If you need to contact us, please click</span>
+    			<div><input type="button" class="mainContactBut" value="contact"></div>
+    		</div>
+    	</div>
+	    
+	    
+	    
+	    <!-- main js -->
+		<script type="text/javascript" th:src="@{/js/view/main.js}"></script>
+	    
+    </div>
+
+</html>
