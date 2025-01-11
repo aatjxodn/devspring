@@ -5,7 +5,7 @@ $(document).ready(function() {
 // 이메일 검증용 정규식
 const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-$('.mailBut').click(function() {
+$('.emailBut').click(function() {
 	
     var name = $('.name').val();
     var subject = $('.subject').val();

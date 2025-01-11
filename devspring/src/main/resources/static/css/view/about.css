@@ -1,100 +1,97 @@
 @charset "UTF-8";
 
-/* --------------------- contact title --------------------- */
-#contact-title {
+/* --------------------- about title --------------------- */
+#about-title {
 	width: 100%;
 	position: relative;
 }
-.contact-title-image {
+.about-title-image {
 	width: 100%;
 	margin: 0 auto;
 }
-.contact-title-image img {
+.about-title-image img {
 	width: 100%;
 	height: 300px;
 	border-bottom: 1px solid #aaaaaa;
 }
-.contact-title-text {
+.about-title-text {
 	position: absolute;
 	top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.contact-title-text h2 {
+.about-title-text h2 {
 	font-size: 3rem;
 	font-weight: bold;
 	color: #fff;
 	margin-bottom: 20px;
 }
-.contact-title-text span {
+.about-title-text span {
 	font-size: 1.7rem;
 	color: #fff;
 	opacity: 0.8;
 }
 
-/* --------------------- contact sub title --------------------- */
-#contact-sub-title {
+/* --------------------- about sub title --------------------- */
+#about-sub-title {
 	width: 100%;
 	text-align: center;
 	margin: 50px auto 0 auto;
 }
-#contact-sub-title h2 {
+#about-sub-title h2 {
 	font-size: 3rem;
 	font-weight: bold;
 	color: #333333;
 }
-
-/* --------------------- contact kakaomap --------------------- */
-#kakaomap {
-	width: 70%;
-	height: 500px;
-	margin: 50px auto 0 auto;
-	border: 1px solid #aaaaaa;
-}
-
-/* --------------------- contact info --------------------- */
-#contact-info {
-	width: 70%;
+#about-sub-content {
+	width: 100%;
+	text-align: center;
 	margin: 50px auto 50px auto;
-	border-bottom: 1px solid #aaaaaa;
 }
-#contact-info div {
-	margin: 20px 0;
+#about-sub-content table {
+	width: 80%;
+	margin: 0 auto;
+	text-align: left;
 }
-#contact-info div span {
-	font-size: 1.3rem;
+#about-sub-content table tr {
+	border-top: 1px solid #dddddd;
 }
-#contact-info div span b {
+#about-sub-content table tr th {
+	font-size: 1.5rem;
 	font-weight: bold;
+	padding: 20px;
+}
+#about-sub-content table tr td {
+	padding: 20px;
+}
+#about-sub-content table tr td p {
+	font-size: 1rem;
+	line-height: 2;
+	opacity: 0.6;
 }
 
 
 
 /* --------------------- 반응형 --------------------- */
 @media (max-width: 500px) {
-	.contact-title-text h2 {
+	.about-title-text h2 {
 		font-size: 2rem;
 	}
-	.contact-title-text span {
+	.about-title-text span {
 		font-size: 1.2rem;
 	}
-	.contact-title-image img {
+	.about-title-image img {
 		height: 200px;
 	}
-	#contact-sub-title h2 {
+	#about-sub-title h2 {
 		font-size: 2rem;
 	}
-	#kakaomap {
-		width: 90%;
-		height: 300px;
-		margin: 50px auto 0 auto;
+	#about-sub-content table tr th {
+		font-size: 1rem;
 	}
-	#contact-info {
-		width: 90%;
-	}
-	#contact-info div span {
-		font-size: 0.9rem;
+	#about-sub-content table tr td p {
+		font-size: 0.7rem;
 	}
 }
 

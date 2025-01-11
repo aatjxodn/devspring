@@ -1,97 +1,100 @@
 @charset "UTF-8";
 
-/* --------------------- company title --------------------- */
-#company-title {
+/* --------------------- location title --------------------- */
+#location-title {
 	width: 100%;
 	position: relative;
 }
-.company-title-image {
+.location-title-image {
 	width: 100%;
 	margin: 0 auto;
 }
-.company-title-image img {
+.location-title-image img {
 	width: 100%;
 	height: 300px;
 	border-bottom: 1px solid #aaaaaa;
 }
-.company-title-text {
+.location-title-text {
 	position: absolute;
 	top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
     text-align: center;
 }
-.company-title-text h2 {
+.location-title-text h2 {
 	font-size: 3rem;
 	font-weight: bold;
 	color: #fff;
 	margin-bottom: 20px;
 }
-.company-title-text span {
+.location-title-text span {
 	font-size: 1.7rem;
 	color: #fff;
 	opacity: 0.8;
 }
 
-/* --------------------- company sub title --------------------- */
-#company-sub-title {
+/* --------------------- location sub title --------------------- */
+#location-sub-title {
 	width: 100%;
 	text-align: center;
 	margin: 50px auto 0 auto;
 }
-#company-sub-title h2 {
+#location-sub-title h2 {
 	font-size: 3rem;
 	font-weight: bold;
 	color: #333333;
 }
-#company-sub-content {
-	width: 100%;
-	text-align: center;
+
+/* --------------------- location kakaomap --------------------- */
+#kakaomap {
+	width: 70%;
+	height: 500px;
+	margin: 50px auto 0 auto;
+	border: 1px solid #aaaaaa;
+}
+
+/* --------------------- location info --------------------- */
+#location-info {
+	width: 70%;
 	margin: 50px auto 50px auto;
+	border-bottom: 1px solid #aaaaaa;
 }
-#company-sub-content table {
-	width: 80%;
-	margin: 0 auto;
-	text-align: left;
+#location-info div {
+	margin: 20px 0;
 }
-#company-sub-content table tr {
-	border-top: 1px solid #dddddd;
+#location-info div span {
+	font-size: 1.3rem;
 }
-#company-sub-content table tr th {
-	font-size: 1.5rem;
+#location-info div span b {
 	font-weight: bold;
-	padding: 20px;
-}
-#company-sub-content table tr td {
-	padding: 20px;
-}
-#company-sub-content table tr td p {
-	font-size: 1rem;
-	line-height: 2;
-	opacity: 0.6;
 }
 
 
 
 /* --------------------- 반응형 --------------------- */
 @media (max-width: 500px) {
-	.company-title-text h2 {
+	.location-title-text h2 {
 		font-size: 2rem;
 	}
-	.company-title-text span {
+	.location-title-text span {
 		font-size: 1.2rem;
 	}
-	.company-title-image img {
+	.location-title-image img {
 		height: 200px;
 	}
-	#company-sub-title h2 {
+	#location-sub-title h2 {
 		font-size: 2rem;
 	}
-	#company-sub-content table tr th {
-		font-size: 1rem;
+	#kakaomap {
+		width: 90%;
+		height: 300px;
+		margin: 50px auto 0 auto;
 	}
-	#company-sub-content table tr td p {
-		font-size: 0.7rem;
+	#location-info {
+		width: 90%;
+	}
+	#location-info div span {
+		font-size: 0.9rem;
 	}
 }
 

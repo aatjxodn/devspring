@@ -3,41 +3,41 @@
 
     <div layout:fragment="content">
     
-    	<div id="contact-title">
-    		<div class="contact-title-image">
-    			<img th:src="@{/images/contact.png}" alt="contact image">
+    	<div id="location-title">
+    		<div class="location-title-image">
+    			<img th:src="@{/images/location.png}" alt="location image">
     		</div>
-    		<div class="contact-title-text">
+    		<div class="location-title-text">
     			<h2>Contact</h2>
     			<span>Korea Location - CeraTST</span>
     		</div>
     	</div>
     	
-    	<div id="contact-sub-title">
+    	<div id="company-sub-title">
     		<h2>Location</h2>
     	</div>
     	
     	<div id="kakaomap"></div>
     	
-    	<div id="contact-info">
-    		<div class="contact-info-address">
+    	<div id="location-info">
+    		<div class="location-info-address">
     			<span><b>address</b> : 22-3 Sindae-ri, Baeksa-myeon, Icheon-si, Gyeonggi-do</span>
     		</div>
-    		<div class="contact-info-phone">
+    		<div class="location-info-phone">
     			<span><b>phone</b> : 010-5123-4880</span>
     		</div>
-    		<div class="contact-info-fax">
+    		<div class="location-info-fax">
     			<span><b>fax</b> : 031-631-1234</span>
     		</div>
-    		<div class="contact-info-email">
+    		<div class="locationinfo-email">
     			<span><b>e-mail</b> : aatjxodn22@gmail.com</span>
     		</div>
     	</div>
     	
     	<!-- Kakao Map API -->
     	<script type="text/javascript" th:src="|https://dapi.kakao.com/v2/maps/sdk.js?appkey=${KakaoAppKey}&libraries=services|"></script>
-    	<!-- contact js -->
-		<script type="text/javascript" th:src="@{/js/view/contact.js}"></script>
+    	<!-- company js -->
+		<script type="text/javascript" th:src="@{/js/view/location.js}"></script>
 	    
     </div>
 

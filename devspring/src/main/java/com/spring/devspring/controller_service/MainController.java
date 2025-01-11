@@ -18,9 +18,9 @@ public class MainController {
 	}
 	
 	// information about us
-	@GetMapping("/company")
-	public String company() {
-		return "view/company";
+	@GetMapping("/about")
+	public String About() {
+		return "view/about";
 	}
 	
 	// Service service1
@@ -45,15 +45,15 @@ public class MainController {
 	}
 	
 	// contact mail
-	@GetMapping("/mail")
-	public String Mail() {
-		return "view/mail";
+	@GetMapping("/email")
+	public String Email() {
+		return "view/email";
 	}
 	// contact contact
-	@GetMapping("/contact")
-	public String Contact(ModelMap model) {
+	@GetMapping("/location")
+	public String Location(ModelMap model) {
 		model.addAttribute("KakaoAppKey", this.kakaoApiKey);
-		return "view/contact";
+		return "view/location";
 	}
 	
 	// test board
