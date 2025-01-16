@@ -3,6 +3,7 @@ package com.spring.devspring.controller_service;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 
 import com.spring.devspring.config.CustomException;

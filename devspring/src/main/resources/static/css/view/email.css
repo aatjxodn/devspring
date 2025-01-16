@@ -7,7 +7,7 @@
 }
 .email-title-image {
 	width: 100%;
-	position: relative;
+	margin: 0 auto;
 }
 .email-title-image img {
 	width: 100%;
@@ -28,7 +28,7 @@
 	margin-bottom: 20px;
 }
 .email-title-text span {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	color: #fff;
 	opacity: 0.8;
 }
@@ -135,3 +135,73 @@
 	}
 }
 
+/* --------------------- 반응형 --------------------- */
+/* Extra small (모바일 - 작은 화면) */
+@media (max-width: 575px) {
+	.about-title-text h2 {
+		font-size: 2rem;
+	}
+	.about-title-text span {
+		font-size: 1rem;
+	}
+	.about-title-image img {
+		height: 200px;
+	}
+	#about-sub-title h2 {
+		font-size: 1.5rem;
+	}
+	#about-sub-content table tr th {
+		font-size: 1rem;
+	}
+	#about-sub-content table tr td p {
+		font-size: 0.6rem;
+	}
+}
+/* Small (모바일 - 일반 크기) */
+@media (min-width: 576px) and (max-width: 767px) {
+	.about-title-text h2 {
+		font-size: 2.5rem;
+	}
+	.about-title-text span {
+		font-size: 1.5rem;
+	}
+	.about-title-image img {
+		height: 200px;
+	}
+	#about-sub-title h2 {
+		font-size: 2rem;
+	}
+	#about-sub-content table tr th {
+		font-size: 1rem;
+	}
+	#about-sub-content table tr td p {
+		font-size: 0.7rem;
+	}
+}
+/* Medium (태블릿) */
+@media (min-width: 768px) and (max-width: 991px) {
+	.about-title-text h2 {
+		font-size: 2.5rem;
+	}
+	.about-title-text span {
+		font-size: 1.5rem;
+	}
+	.about-title-image img {
+		height: 200px;
+	}
+	#about-sub-title h2 {
+		font-size: 2rem;
+	}
+	#about-sub-content table tr th {
+		font-size: 1rem;
+	}
+	#about-sub-content table tr td p {
+		font-size: 0.7rem;
+	}
+}
+/* Large (작은 데스크탑) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* Extra large (일반 데스크탑) */
+@media (min-width: 1200px) {
+}

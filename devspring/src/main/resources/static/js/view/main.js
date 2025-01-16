@@ -65,5 +65,5 @@ function mainSlide() {
 
 // contact but 클릭 시
 $('.mainContactBut').click(function() {
-	location.href='/mail';
+	location.href='/email';
 });

@@ -28,19 +28,19 @@
 	margin-bottom: 20px;
 }
 .about-title-text span {
-	font-size: 1.7rem;
+	font-size: 1.5rem;
 	color: #fff;
 	opacity: 0.8;
 }
 
-/* --------------------- about sub title --------------------- */
+/* --------------------- about sub --------------------- */
 #about-sub-title {
 	width: 100%;
 	text-align: center;
 	margin: 50px auto 0 auto;
 }
 #about-sub-title h2 {
-	font-size: 3rem;
+	font-size: 2.5rem;
 	font-weight: bold;
 	color: #333333;
 }
@@ -58,8 +58,9 @@
 	border-top: 1px solid #dddddd;
 }
 #about-sub-content table tr th {
-	font-size: 1.5rem;
+	font-size: 1.3rem;
 	font-weight: bold;
+	color: #333333;
 	padding: 20px;
 }
 #about-sub-content table tr td {
@@ -67,19 +68,41 @@
 }
 #about-sub-content table tr td p {
 	font-size: 1rem;
+	color: #666666;
 	line-height: 2;
-	opacity: 0.6;
 }
 
 
 
 /* --------------------- 반응형 --------------------- */
-@media (max-width: 500px) {
+/* Extra small (모바일 - 작은 화면) */
+@media (max-width: 575px) {
 	.about-title-text h2 {
 		font-size: 2rem;
 	}
 	.about-title-text span {
-		font-size: 1.2rem;
+		font-size: 1rem;
+	}
+	.about-title-image img {
+		height: 200px;
+	}
+	#about-sub-title h2 {
+		font-size: 1.5rem;
+	}
+	#about-sub-content table tr th {
+		font-size: 1rem;
+	}
+	#about-sub-content table tr td p {
+		font-size: 0.6rem;
+	}
+}
+/* Small (모바일 - 일반 크기) */
+@media (min-width: 576px) and (max-width: 767px) {
+	.about-title-text h2 {
+		font-size: 2.5rem;
+	}
+	.about-title-text span {
+		font-size: 1.5rem;
 	}
 	.about-title-image img {
 		height: 200px;
@@ -94,24 +117,30 @@
 		font-size: 0.7rem;
 	}
 }
-
-
-/* Extra small (모바일 - 작은 화면) */
-@media (max-width: 575px) {
-}
-
-/* Small (모바일 - 일반 크기) */
-@media (min-width: 576px) and (max-width: 767px) {
-}
-
 /* Medium (태블릿) */
 @media (min-width: 768px) and (max-width: 991px) {
+	.about-title-text h2 {
+		font-size: 2.5rem;
+	}
+	.about-title-text span {
+		font-size: 1.5rem;
+	}
+	.about-title-image img {
+		height: 200px;
+	}
+	#about-sub-title h2 {
+		font-size: 2rem;
+	}
+	#about-sub-content table tr th {
+		font-size: 1rem;
+	}
+	#about-sub-content table tr td p {
+		font-size: 0.7rem;
+	}
 }
-
 /* Large (작은 데스크탑) */
 @media (min-width: 992px) and (max-width: 1199px) {
 }
-
 /* Extra large (일반 데스크탑) */
 @media (min-width: 1200px) {
 }

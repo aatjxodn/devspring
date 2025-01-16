@@ -35,7 +35,16 @@
 }
 .main-slider-text div {
     width: 100%; /* 중앙 정렬 유지 */
-    color: white; /* 텍스트 색상 */
+}
+.main-slider-text1 {
+	font-size: 3rem;
+	color: #fff;
+	margin-bottom: 20px;
+}
+.main-slider-text2 {
+	font-size: 1.5rem; 
+	opacity: 0.8;
+	color: #fff;
 }
 .slick-prev, .slick-next {
     z-index: 3;
@@ -52,11 +61,10 @@
 #main-service {
 	width: 100%;
 	margin: 0 auto;
-	padding: 0 0 100px 0;
 }
 .main-service-title {
 	width: 100%;
-	margin: 100px auto 0 auto;
+	margin: 50px auto 0 auto;
 	text-align: center;
 }
 .main-service-title div {
@@ -143,29 +151,35 @@
 	border-radius: 5px;
 }
 
-
-
 /* --------------------- 반응형 --------------------- */
-@media (max-width: 1200px) {
-	.main-service-content div {
-		width: 40%;
-	}
-}
-@media (max-width: 500px) {
+/* Extra small (모바일 - 작은 화면) */
+@media (max-width: 575px) {
 	.main-slider-image div img {
 	    height: 300px;
-	}
-	.main-service-content div {
-		width: 100%;
 	}
 	.main-slider-image div{
 		height: 300px;
 	}
-	.main-contact-text h2 {
+	.main-slider-text1 {
 		font-size: 2rem;
 	}
-	.main-contact-text span {
+	.main-slider-text2 {
+		font-size: 1rem; 
+	}
+	.main-service-content div {
+		width: 100%;
+	}
+	.main-service-title div h2 {
+		font-size: 1.8rem;
+	}
+	.main-service-title div span {
 		font-size: 1rem;
+	}
+	.main-contact-text h2 {
+		font-size: 1.8rem;
+	}
+	.main-contact-text span {
+		font-size: 0.8rem;
 	}
 	.main-contact-image {
 		height: 300px;
@@ -173,4 +187,92 @@
 	.main-contact-image img {
 		height: 300px;
 	}
+	.main-contact-text div input {
+		font-size: 0.8rem;
+		padding: 10px 50px;
+	}
+}
+/* Small (모바일 - 일반 크기) */
+@media (min-width: 576px) and (max-width: 767px) {
+	.main-slider-image div img {
+	    height: 500px;
+	}
+	.main-slider-image div{
+		height: 500px;
+	}
+	.main-slider-text1 {
+		font-size: 2rem;
+	}
+	.main-slider-text2 {
+		font-size: 1rem; 
+	}
+	.main-service-content div {
+		width: 40%;
+	}
+	.main-service-title div h2 {
+		font-size: 2rem;
+	}
+	.main-service-title div span {
+		font-size: 1rem;
+	}
+	.main-contact-text h2 {
+		font-size: 2rem;
+	}
+	.main-contact-text span {
+		font-size: 1.2rem;
+	}
+	.main-contact-image {
+		height: 300px;
+	}
+	.main-contact-image img {
+		height: 300px;
+	}
+	.main-contact-text div input {
+		font-size: 0.9rem;
+		padding: 15px 75px;
+	}
+}
+/* Medium (태블릿) */
+@media (min-width: 768px) and (max-width: 991px) {
+	.main-slider-image div img {
+	    height: 500px;
+	}
+	.main-slider-image div{
+		height: 500px;
+	}
+	.main-slider-text1 {
+		font-size: 2.5rem;
+	}
+	.main-slider-text2 {
+		font-size: 1.5rem; 
+	}
+	.main-service-content div {
+		width: 40%;
+	}
+	.main-service-title div h2 {
+		font-size: 2.5rem;
+	}
+	.main-service-title div span {
+		font-size: 1.5rem;
+	}
+	.main-contact-text h2 {
+		font-size: 2.5rem;
+	}
+	.main-contact-text span {
+		font-size: 1.5rem;
+	}
+	.main-contact-image {
+		height: 400px;
+	}
+	.main-contact-image img {
+		height: 400px;
+	}
+}
+/* Large (작은 데스크탑) */
+@media (min-width: 992px) and (max-width: 1199px) {
+	
+}
+/* Extra large (일반 데스크탑) */
+@media (min-width: 1200px) {
+	
 }

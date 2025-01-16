@@ -35,7 +35,7 @@ function setLnb() {
 	                lnbA.attr('href', item.ctLnbUrl).text(item.ctLnbName);
 
 	                if (currentPath === item.ctLnbUrl || currentPath === '/' + item.ctLnbUrl) {
-	                    lnbA.css("color", "#323232");
+	                    lnbA.css("color", "#0b52a5");
 	                }
 	            } else {
 	                lnbA.text(item.ctLnbName).css("cursor", "default");
@@ -78,7 +78,7 @@ function setLnb() {
 								subA.attr('href', subItem.ctLnbSubUrl).text(subItem.ctLnbSubName);
 								
 				                if (currentPath == subItem.ctLnbSubUrl) {
-				                    subA.css("color", "#323232");
+				                    subA.css("color", "#0b52a5");
 				                }
 								
 	                            subLi.append(subA);
@@ -108,7 +108,6 @@ function setLnb() {
 			alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
 		}
 	});
-	
 }
 
 // 모바일 lnb 설정
@@ -197,22 +196,25 @@ function setLnb() {
 	});
 }*/
 
+// 모바일 lnb 설정
 function setLnbMob() {
     $.ajax({
         url: 'common/lnb',
         method: 'GET',
         dataType: 'json',
         success: function (data) {
+			
             var lnbUl = $('.lnb_mob');
 
             $.each(data, function (index, item) {
+				
                 var lnbLi = $('<li></li>');
                 var lnbA = $('<a></a>');
 
                 if (item.ctLnbUrl != '') {
                     lnbA.attr('href', item.ctLnbUrl).text(item.ctLnbName);
                     if (currentPath === item.ctLnbUrl || currentPath === '/' + item.ctLnbUrl) {
-                        lnbA.css("color", "#323232");
+                        lnbA.css("color", "#0b52a5");
                     }
                 } else {
                     lnbA.text(item.ctLnbName).css("cursor", "default");
@@ -234,7 +236,7 @@ function setLnbMob() {
 
                                 subA.attr('href', subItem.ctLnbSubUrl).text(subItem.ctLnbSubName);
                                 if (currentPath == subItem.ctLnbSubUrl) {
-                                    subA.css("color", "#323232");
+                                    subA.css("color", "#0b52a5");
                                 }
 
                                 subLi.append(subA);
