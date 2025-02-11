@@ -67,5 +67,17 @@ public class MainController {
 	public String Admin() {
 		return "view/admin/main/login";
 	}
+	
+	// admin Main
+	@GetMapping("/adminMain")
+	public String AdminMain() {
+		return "view/admin/main/admin";
+	}
+	
+	// admin Main
+	@GetMapping("/adminNew")
+	public String adminNew() {
+		return "view/admin/main/memberForm";
+	}
 
 }

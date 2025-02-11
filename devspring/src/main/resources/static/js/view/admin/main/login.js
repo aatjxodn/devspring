@@ -4,16 +4,16 @@ $(document).ready(function() {
 });
 
 // 로그인 버튼 클릭 시
-$('#djsUserloginButton').click(function() {
+$('#ctUserloginButton').click(function() {
 	
-	var djsUserId = $("#djsUserId").val();
-	var djsUserPwd = $("#djsUserId").val();
+	var ctUserId = $("#ctUserId").val();
+	var ctUserPwd = $("#ctUserId").val();
 	
-	if (djsUserId === '') {
+	if (ctUserId === '') {
 		alert("ID를 입력해주세요.");
 		return;
 	}
-	if (djsUserPwd === '') {
+	if (ctUserPwd === '') {
 		alert("Password를 입력해주세요.");
 		return;	
 	}

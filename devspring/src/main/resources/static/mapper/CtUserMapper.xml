@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.devspring.mapper.CtUserMapper">
+
+    <select id="findByCtUserId" resultType="com.spring.devspring.dto.CtUserDTO">
+        SELECT	
+        	CT_USER_IDX AS ctUserIdx,
+        	CT_USER_ID AS ctUserId,
+        	CT_USER_PWD AS ctUserPwd,
+        	CT_USER_NAME AS ctUserName,
+        	CT_USER_EMAIL AS ctUserEmail,
+        	CT_USER_PHONE_NUMBER AS ctUserPhoneNumber,
+        	CT_USER_AUTHORITY AS ctUserAuthority,
+        	CT_USER_CREATE_TIME AS ctUserCreateTime,
+        	CT_USER_UPDATE_TIME AS ctUserUpdateTime
+        FROM CT_USER
+        WHERE CT_USER_ID = #{ctUserId}
+    </select>
+    
+    <insert id="insertUser" parameterType="com.spring.devspring.dto.CtUserDTO">
+    	INSERT INTO CT_USER(CT_USER_ID, CT_USER_PWD, CT_USER_NAME, CT_USER_EMAIL, CT_USER_PHONE_NUMBER, CT_USER_AUTHORITY, CT_USER_CREATE_TIME, CT_USER_UPDATE_TIME)
+    	VALUES (
+    		#{ctUserId},
+    		#{ctUserPwd},
+    		#{ctUserName},
+    		#{ctUserEmail},
+    		#{ctUserPhoneNumber},
+    		#{ctUserAuthority},
+    		#{ctUserCreateTime},
+    		#{ctUserUpdateTime}
+    	)
+    </insert>
+    
+</mapper>

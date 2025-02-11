@@ -9,10 +9,10 @@
     <!-- 파일 출력 -->
     <appender name="FILE" class="ch.qos.logback.core.rolling.RollingFileAppender">
         <!-- 프로젝트 내부 logs 디렉토리에 저장 -->
-        <file>./logs/application.log</file>
+        <file>./logs/devSpring.log</file>
         <rollingPolicy class="ch.qos.logback.core.rolling.TimeBasedRollingPolicy">
             <!-- 하루 단위로 롤링 -->
-            <fileNamePattern>./logs/application.%d{yyyy-MM-dd}.log</fileNamePattern>
+            <fileNamePattern>./logs/devSpring.%d{yyyy-MM-dd}.log</fileNamePattern>
             <maxHistory>3</maxHistory> <!-- 최대 3일 로그 보관 -->
         </rollingPolicy>
         <encoder>
