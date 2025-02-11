@@ -1,0 +1,212 @@
+@charset "UTF-8";
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&family=Ubuntu:ital,wght@0,300;0,400;0,500;0,700;1,300;1,400;1,500;1,700&display=swap');
+
+* {
+	padding: 0;
+	margin: 0;
+	color: #000;
+	list-style: none;
+	text-decoration: none;
+	font-size: 1rem;
+	box-sizing: border-box;
+}
+html, body {
+	font-family: 'ubuntu', sans-serif;
+}
+
+/* --------------------- header --------------------- */
+#header {
+	width: 100%;
+	height: 80px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	border-bottom: 1px solid #aaaaaa;
+	z-index: 1001;
+	background-color: #fff;
+	position: fixed;
+}
+
+/* --------------------- header icon --------------------- */
+.header_icon {
+	
+}
+.header_icon span {
+	font-size: 2rem;
+	font-weight: bold;
+}
+
+/* --------------------- header lnb --------------------- */
+.header_lnb {
+	display: flex;
+}
+.lnb {
+	display: flex;
+	position: relative;
+}
+.lnb li {
+	padding: 30px;
+}
+.lnb li a {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #333333;
+	cursor: pointer;
+}
+.lnb li ul {
+	display: none;
+	position: absolute;
+	top: 65px;
+	border: 1px solid #aaaaaa;
+	background-color: #fff;
+	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
+	z-index: 1000;
+}
+.lnb li ul li {
+	padding: 20px;
+	text-align: center;
+}
+.lnb li ul li a {
+	font-size: 1rem;
+	font-weight: bold;
+	color: #666666;
+	cursor: pointer;
+}
+
+/* --------------------- header language --------------------- */
+.language  {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.language li {
+	border-right: 1px solid #aaaaaa;
+	padding: 0 10px;
+}
+.language li:last-child {
+	border-right: none;
+}
+
+/* --------------------- header hamberger button --------------------- */
+.header_hamburger {
+	display: none;
+}
+.header_hamburger span {
+	font-size: 1.2rem;
+	font-weight: bold;
+	cursor: pointer;
+	margin-right: 30px;
+}
+
+/* --------------------- header mobile lnb --------------------- */
+.header_lnb_mob {
+	width: 100%;
+	display: none;
+	position: absolute;
+	top: 80px;
+	text-align: center;
+	z-index: 999;
+}
+.lnb_mob {
+	position: relative;
+}
+.lnb_mob li {
+    border-bottom: 1px solid #aaaaaa;
+    background-color: #fdfdfd;
+    padding: 20px 0;
+}
+.lnb_mob li a {
+	font-size: 1rem;
+	font-weight: bold;
+	cursor: pointer;
+	color: #333333;
+}
+.lnb_mob li ul {
+	display: none;
+}
+.lnb_mob li ul li {
+	border-bottom: none;
+	background-color: transparent;
+	padding: 30px 0 0 0;
+}
+.lnb_mob li ul li a {
+	font-size: 0.8rem;
+	font-weight: bold;
+	color: #666666;
+	cursor: pointer;
+}
+
+
+/* --------------------- 반응형 --------------------- */
+/* Extra small (모바일 - 작은 화면) */
+@media (max-width: 575px) {
+	#header {
+		justify-content: space-between;
+	}
+	.header_icon span {
+		font-size: 1.5rem;
+		margin-left: 30px;
+	}
+	.header_hamburger span {
+		font-size: 1.5rem;
+	}
+	.lnb {
+		display: none;
+	}
+	.language {
+		display: none;
+	}
+	.header_hamburger {
+		display: block;
+	}
+}
+/* Small (모바일 - 일반 크기) */
+@media (min-width: 576px) and (max-width: 767px) {
+	#header {
+		justify-content: space-between;
+	}
+	.header_icon span {
+		font-size: 1.5rem;
+		margin-left: 30px;
+	}
+	.header_hamburger span {
+		font-size: 1.5rem;
+	}
+	.lnb {
+		display: none;
+	}
+	.language {
+		display: none;
+	}
+	.header_hamburger {
+		display: block;
+	}
+}
+/* Medium (태블릿) */
+@media (min-width: 768px) and (max-width: 991px) {
+	#header {
+		justify-content: space-between;
+	}
+	.header_icon span {
+		font-size: 1.5rem;
+		margin-left: 30px;
+	}
+	.header_hamburger span {
+		font-size: 1.5rem;
+	}
+	.lnb {
+		display: none;
+	}
+	.language {
+		display: none;
+	}
+	.header_hamburger {
+		display: block;
+	}
+}
+/* Large (작은 데스크탑) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* Extra large (일반 데스크탑) */
+@media (min-width: 1200px) {
+}

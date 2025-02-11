@@ -55,7 +55,6 @@ $('.emailBut').click(function() {
         contentType: 'application/json',
         success: function(data) {
             alert('The email has been sent successfully.');
-			location.href='/mail';
         },
         error: function(request, status, error) {
             alert("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);

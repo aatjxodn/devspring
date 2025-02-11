@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org"
+      xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout">
+<head>
+    <meta charset="UTF-8">
+    <title>Spring</title>
+    <!-- 반응형 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <!-- slick CDN -->
+    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
+    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
+    
+    <!-- reset css -->
+	<link th:href="@{/css/common/user/fragments/reset.css}" rel="stylesheet">
+	<!-- header css -->
+	<link th:href="@{/css/common/user/fragments/header.css}" rel="stylesheet">
+	<!-- footer css -->
+	<link th:href="@{/css/common/user/fragments/footer.css}" rel="stylesheet">
+	
+	<!-- main css -->
+	<link th:href="@{/css/view/user/main/main.css}" rel="stylesheet">
+	<!-- board css -->
+	<link th:href="@{/css/view/user/sub/board.css}" rel="stylesheet">
+	<!-- contact css -->
+	<link th:href="@{/css/view/user/sub/location.css}" rel="stylesheet">
+	<!-- mail css -->
+	<link th:href="@{/css/view/user/sub/email.css}" rel="stylesheet">
+	<!-- about css -->
+	<link th:href="@{/css/view/user/sub/about.css}" rel="stylesheet">
+</head>
+<body>
+
+    <div th:replace="common/user/fragments/header::header"></div>
+
+    <div layout:fragment="content" class="content"></div>
+
+    <div th:replace="common/user/fragments/footer::footer"></div>
+
+</body>
+</html>

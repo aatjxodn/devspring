@@ -68,9 +68,9 @@ public class MainController {
 		return "view/admin/main/admin";
 	}
 	// Admin Main
-	@GetMapping("/adminNew")
+	@GetMapping("/userList")
 	public String adminNew() {
-		return "view/admin/main/memberForm";
+		return "view/admin/sub/userList";
 	}
 
 }

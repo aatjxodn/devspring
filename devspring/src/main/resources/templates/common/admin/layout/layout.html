@@ -13,31 +13,23 @@
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
     <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
     
-    <!-- rest css -->
-	<link th:href="@{/css/common/fragments/reset.css}" rel="stylesheet">
+    <!-- reset css -->
+	<link th:href="@{/css/common/admin/fragments/reset.css}" rel="stylesheet">
 	<!-- header css -->
-	<link th:href="@{/css/common/fragments/header.css}" rel="stylesheet">
-	<!-- footer css -->
-	<link th:href="@{/css/common/fragments/footer.css}" rel="stylesheet">
+	<link th:href="@{/css/common/admin/fragments/header.css}" rel="stylesheet">
+	<!-- menu css -->
+	<link th:href="@{/css/common/admin/fragments/menu.css}" rel="stylesheet">
 	
-	<!-- main css -->
-	<link th:href="@{/css/view/user/main/main.css}" rel="stylesheet">
-	<!-- board css -->
-	<link th:href="@{/css/view/user/sub/board.css}" rel="stylesheet">
-	<!-- contact css -->
-	<link th:href="@{/css/view/user/sub/location.css}" rel="stylesheet">
-	<!-- mail css -->
-	<link th:href="@{/css/view/user/sub/email.css}" rel="stylesheet">
-	<!-- about css -->
-	<link th:href="@{/css/view/user/sub/about.css}" rel="stylesheet">
+	<!-- admin main css -->
+	<link th:href="@{/css/view/admin/main/admin.css}" rel="stylesheet">
 </head>
 <body>
 
-    <div th:replace="common/fragments/header::header"></div>
+    <div th:replace="common/admin/fragments/header::header"></div>
+    
+    <div th:replace="common/admin/fragments/menu::menu"></div>
 
     <div layout:fragment="content" class="content"></div>
-
-    <div th:replace="common/fragments/footer::footer"></div>
 
 </body>
 </html>
