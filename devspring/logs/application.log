@@ -364,3 +364,767 @@
 2025-01-25 17:10:35 [RMI TCP Connection(7)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
 2025-01-25 17:10:35 [RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
 2025-01-25 17:10:35 [RMI TCP Connection(7)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
+2025-01-25 18:09:32 [restartedMain] INFO  c.s.devspring.DevspringApplication - Starting DevspringApplication using Java 17.0.12 with PID 17432 (C:\Users\aatjx\git\devspring\devspring\bin\main started by aatjx in C:\Users\aatjx\git\devspring\devspring)
+2025-01-25 18:09:32 [restartedMain] INFO  c.s.devspring.DevspringApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-25 18:09:32 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-25 18:09:32 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-25 18:09:33 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-25 18:09:33 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-25 18:09:33 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-01-25 18:09:33 [restartedMain] DEBUG o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-01-25 18:09:33 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\aatjx\git\devspring\devspring\bin\main\com\spring\devspring\mapper\BoardMapper.class]
+2025-01-25 18:09:33 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\aatjx\git\devspring\devspring\bin\main\com\spring\devspring\mapper\CommonMapper.class]
+2025-01-25 18:09:33 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'boardMapper' and 'com.spring.devspring.mapper.BoardMapper' mapperInterface
+2025-01-25 18:09:33 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'commonMapper' and 'com.spring.devspring.mapper.CommonMapper' mapperInterface
+2025-01-25 18:09:33 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-25 18:09:33 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-25 18:09:33 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-25 18:09:33 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-25 18:09:33 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-25 18:09:33 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1011 ms
+2025-01-25 18:09:33 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2025-01-25 18:09:34 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\aatjx\git\devspring\devspring\bin\main\static\mapper\BoardMapper.xml]'
+2025-01-25 18:09:34 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\aatjx\git\devspring\devspring\bin\main\static\mapper\CommonMapper.xml]'
+2025-01-25 18:09:34 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-25 18:09:34 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-25 18:09:34 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-25 18:09:34 [restartedMain] INFO  c.s.devspring.DevspringApplication - Started DevspringApplication in 2.212 seconds (process running for 2.637)
+2025-01-25 18:09:57 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-25 18:09:57 [RMI TCP Connection(8)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-25 18:09:57 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-01-25 18:09:57 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-25 18:09:57 [RMI TCP Connection(8)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-25 18:10:03 [restartedMain] INFO  c.s.devspring.DevspringApplication - Starting DevspringApplication using Java 17.0.12 with PID 3008 (C:\Users\aatjx\git\devspring\devspring\bin\main started by aatjx in C:\Users\aatjx\git\devspring\devspring)
+2025-01-25 18:10:03 [restartedMain] INFO  c.s.devspring.DevspringApplication - No active profile set, falling back to 1 default profile: "default"
+2025-01-25 18:10:03 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2025-01-25 18:10:03 [restartedMain] INFO  o.s.b.d.e.DevToolsPropertyDefaultsPostProcessor - For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2025-01-25 18:10:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Multiple Spring Data modules found, entering strict repository configuration mode
+2025-01-25 18:10:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Bootstrapping Spring Data Redis repositories in DEFAULT mode.
+2025-01-25 18:10:03 [restartedMain] INFO  o.s.d.r.c.RepositoryConfigurationDelegate - Finished Spring Data repository scanning in 9 ms. Found 0 Redis repository interfaces.
+2025-01-25 18:10:03 [restartedMain] DEBUG o.apache.ibatis.logging.LogFactory - Logging initialized using 'class org.apache.ibatis.logging.slf4j.Slf4jImpl' adapter.
+2025-01-25 18:10:03 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\aatjx\git\devspring\devspring\bin\main\com\spring\devspring\mapper\BoardMapper.class]
+2025-01-25 18:10:03 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Identified candidate component class: file [C:\Users\aatjx\git\devspring\devspring\bin\main\com\spring\devspring\mapper\CommonMapper.class]
+2025-01-25 18:10:03 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'boardMapper' and 'com.spring.devspring.mapper.BoardMapper' mapperInterface
+2025-01-25 18:10:03 [restartedMain] DEBUG o.m.s.mapper.ClassPathMapperScanner - Creating MapperFactoryBean with name 'commonMapper' and 'com.spring.devspring.mapper.CommonMapper' mapperInterface
+2025-01-25 18:10:04 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat initialized with port 8080 (http)
+2025-01-25 18:10:04 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Initializing ProtocolHandler ["http-nio-8080"]
+2025-01-25 18:10:04 [restartedMain] INFO  o.a.catalina.core.StandardService - Starting service [Tomcat]
+2025-01-25 18:10:04 [restartedMain] INFO  o.a.catalina.core.StandardEngine - Starting Servlet engine: [Apache Tomcat/10.1.34]
+2025-01-25 18:10:04 [restartedMain] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring embedded WebApplicationContext
+2025-01-25 18:10:04 [restartedMain] INFO  o.s.b.w.s.c.ServletWebServerApplicationContext - Root WebApplicationContext: initialization completed in 1007 ms
+2025-01-25 18:10:04 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Property 'configuration' or 'configLocation' not specified, using default MyBatis Configuration
+2025-01-25 18:10:04 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\aatjx\git\devspring\devspring\bin\main\static\mapper\BoardMapper.xml]'
+2025-01-25 18:10:04 [restartedMain] DEBUG o.m.spring.SqlSessionFactoryBean - Parsed mapper file: 'file [C:\Users\aatjx\git\devspring\devspring\bin\main\static\mapper\CommonMapper.xml]'
+2025-01-25 18:10:05 [restartedMain] INFO  o.s.b.d.a.OptionalLiveReloadServer - LiveReload server is running on port 35729
+2025-01-25 18:10:05 [restartedMain] INFO  o.a.coyote.http11.Http11NioProtocol - Starting ProtocolHandler ["http-nio-8080"]
+2025-01-25 18:10:05 [restartedMain] INFO  o.s.b.w.e.tomcat.TomcatWebServer - Tomcat started on port 8080 (http) with context path '/'
+2025-01-25 18:10:05 [restartedMain] INFO  c.s.devspring.DevspringApplication - Started DevspringApplication in 2.232 seconds (process running for 2.667)
+2025-01-25 18:10:05 [http-nio-8080-exec-1] INFO  o.a.c.c.C.[Tomcat].[localhost].[/] - Initializing Spring DispatcherServlet 'dispatcherServlet'
+2025-01-25 18:10:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Initializing Servlet 'dispatcherServlet'
+2025-01-25 18:10:05 [http-nio-8080-exec-1] INFO  o.s.web.servlet.DispatcherServlet - Completed initialization in 0 ms
+2025-01-25 18:10:05 [http-nio-8080-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-1][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/header::header" found in template common/layout/layout, line 33, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:10:05 [http-nio-8080-exec-1] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-1][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/footer::footer" found in template common/layout/layout, line 37, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:10:05 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:05 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5848950a] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:05 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Starting...
+2025-01-25 18:10:06 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.pool.HikariPool - HikariPool-1 - Added connection com.mysql.cj.jdbc.ConnectionImpl@4c8b2322
+2025-01-25 18:10:06 [http-nio-8080-exec-6] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Start completed.
+2025-01-25 18:10:06 [http-nio-8080-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@827515656 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:06 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:10:06 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:10:06 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:10:06 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5848950a]
+2025-01-25 18:10:06 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:06 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@526e5ebe] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:06 [http-nio-8080-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1448202283 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:06 [http-nio-8080-exec-10] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:10:06 [http-nio-8080-exec-10] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:10:06 [http-nio-8080-exec-10] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:10:06 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@526e5ebe]
+2025-01-25 18:10:06 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:06 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:06 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:06 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2720f370] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:06 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65ebba40] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:06 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ec63715] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:06 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@759662220 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:06 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:06 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:10:06 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:10:06 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65ebba40]
+2025-01-25 18:10:06 [http-nio-8080-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1542033945 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:06 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:06 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:10:06 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:10:06 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2720f370]
+2025-01-25 18:10:06 [http-nio-8080-exec-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1051294818 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:06 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:06 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:10:06 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:06 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@199132a3] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:06 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:10:06 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ec63715]
+2025-01-25 18:10:06 [http-nio-8080-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1652234443 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:06 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:06 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:10:06 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:06 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@627f9bf2] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:06 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:10:06 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:06 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70cd2850] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:06 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@199132a3]
+2025-01-25 18:10:06 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@662505945 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:06 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:06 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:10:06 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:10:06 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@627f9bf2]
+2025-01-25 18:10:06 [http-nio-8080-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1290291455 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:06 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:06 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:10:06 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:10:06 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@70cd2850]
+2025-01-25 18:10:27 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/header::header" found in template common/layout/layout, line 33, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:10:27 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/footer::footer" found in template common/layout/layout, line 37, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:10:27 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:27 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4902928e] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:27 [http-nio-8080-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1217322423 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:27 [http-nio-8080-exec-1] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:10:27 [http-nio-8080-exec-1] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:10:27 [http-nio-8080-exec-1] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:10:27 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4902928e]
+2025-01-25 18:10:27 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:27 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@82e058b] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:27 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1196619414 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:27 [http-nio-8080-exec-8] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:10:27 [http-nio-8080-exec-8] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:10:27 [http-nio-8080-exec-8] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:10:27 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@82e058b]
+2025-01-25 18:10:27 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:27 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:27 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:27 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27138aea] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:27 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d099fb] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:27 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7eedc41e] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:27 [http-nio-8080-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@242321070 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:27 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:27 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:10:27 [http-nio-8080-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2112642396 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:10:27 [http-nio-8080-exec-4] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@661162442 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:10:27 [http-nio-8080-exec-6] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:27 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:27 [http-nio-8080-exec-6] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:10:27 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:10:27 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:10:27 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@d099fb]
+2025-01-25 18:10:27 [http-nio-8080-exec-6] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:10:27 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:10:27 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7eedc41e]
+2025-01-25 18:10:27 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@27138aea]
+2025-01-25 18:10:27 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:27 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25ed0aeb] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:27 [http-nio-8080-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2036720572 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:27 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:27 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:10:27 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:27 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:27 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43208c8f] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:27 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a022f73] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:27 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1892811485 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:10:27 [http-nio-8080-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@169094792 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:10:27 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:27 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:27 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:10:27 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:10:27 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:10:27 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@25ed0aeb]
+2025-01-25 18:10:27 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:10:27 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@43208c8f]
+2025-01-25 18:10:27 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:10:27 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7a022f73]
+2025-01-25 18:10:29 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/header::header" found in template common/layout/layout, line 33, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:10:29 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/footer::footer" found in template common/layout/layout, line 37, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:10:29 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:29 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10a4a6f9] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:29 [http-nio-8080-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@779727423 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:29 [http-nio-8080-exec-1] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:10:29 [http-nio-8080-exec-1] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:10:29 [http-nio-8080-exec-1] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:10:29 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@10a4a6f9]
+2025-01-25 18:10:29 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:29 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4cfc446] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:29 [http-nio-8080-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@101283463 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:29 [http-nio-8080-exec-3] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:10:29 [http-nio-8080-exec-3] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:10:29 [http-nio-8080-exec-3] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:10:29 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4cfc446]
+2025-01-25 18:10:29 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:29 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:29 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:29 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ab055a7] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:29 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1981475c] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:29 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@369d05d7] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:29 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@346247646 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:29 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:29 [http-nio-8080-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1106476226 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:10:29 [http-nio-8080-exec-4] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@257929576 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:10:29 [http-nio-8080-exec-6] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:29 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:10:29 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:29 [http-nio-8080-exec-6] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:10:29 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:10:29 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:10:29 [http-nio-8080-exec-6] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:10:29 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:10:29 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1981475c]
+2025-01-25 18:10:29 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@369d05d7]
+2025-01-25 18:10:29 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ab055a7]
+2025-01-25 18:10:29 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:29 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:29 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:29 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21e13995] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:29 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@653fb907] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:29 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34b6fc1c] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:29 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@38479282 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:10:29 [http-nio-8080-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@783682004 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:10:29 [http-nio-8080-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@856804895 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:29 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:29 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:29 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:29 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:10:29 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:10:29 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:10:29 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:10:29 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:10:29 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:10:29 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@653fb907]
+2025-01-25 18:10:29 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34b6fc1c]
+2025-01-25 18:10:29 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21e13995]
+2025-01-25 18:10:38 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/header::header" found in template common/layout/layout, line 33, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:10:38 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/footer::footer" found in template common/layout/layout, line 37, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:10:38 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:38 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32cfeedd] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:38 [http-nio-8080-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1371818737 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:38 [http-nio-8080-exec-1] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:10:38 [http-nio-8080-exec-1] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:10:38 [http-nio-8080-exec-1] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:10:38 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@32cfeedd]
+2025-01-25 18:10:38 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:38 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ed1794b] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:38 [http-nio-8080-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@60916568 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:38 [http-nio-8080-exec-3] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:10:38 [http-nio-8080-exec-3] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:10:38 [http-nio-8080-exec-3] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:10:38 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ed1794b]
+2025-01-25 18:10:38 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:38 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:38 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:38 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cadc5c9] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:38 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34e96bd8] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:38 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ab0e8a6] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:38 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@605254031 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:38 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:38 [http-nio-8080-exec-4] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2114707909 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:10:38 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:10:38 [http-nio-8080-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@154483308 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:10:38 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:38 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:38 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:10:38 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:10:38 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:10:38 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:10:38 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:10:38 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34e96bd8]
+2025-01-25 18:10:38 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cadc5c9]
+2025-01-25 18:10:38 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2ab0e8a6]
+2025-01-25 18:10:38 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:38 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:38 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3887d563] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:38 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12a297c] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:38 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:38 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@291598b1] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:38 [http-nio-8080-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@525101092 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:10:38 [http-nio-8080-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1288074730 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:38 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@393790360 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:10:38 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:38 [http-nio-8080-exec-6] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:38 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:38 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:10:38 [http-nio-8080-exec-6] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:10:38 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:10:38 [http-nio-8080-exec-6] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:10:38 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:10:38 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:10:38 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@12a297c]
+2025-01-25 18:10:38 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@291598b1]
+2025-01-25 18:10:38 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3887d563]
+2025-01-25 18:10:54 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/header::header" found in template common/layout/layout, line 33, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:10:54 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/footer::footer" found in template common/layout/layout, line 37, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30860a0] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@573357261 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30860a0]
+2025-01-25 18:10:54 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:54 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68106555] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:54 [http-nio-8080-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@386282648 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:54 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:10:54 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:10:54 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:10:54 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68106555]
+2025-01-25 18:10:54 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:54 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:54 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:54 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7192a07d] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:54 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a682d2] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:54 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54af983b] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:54 [http-nio-8080-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@419879527 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:54 [http-nio-8080-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1944939884 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:10:54 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:54 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:54 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:10:54 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:10:54 [http-nio-8080-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1733829325 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:10:54 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:54 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:10:54 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:10:54 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:10:54 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:10:54 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7192a07d]
+2025-01-25 18:10:54 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4a682d2]
+2025-01-25 18:10:54 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@54af983b]
+2025-01-25 18:10:54 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:54 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6abc4d12] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:54 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d6463f8] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:54 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b13855e] was not registered for synchronization because synchronization is not active
+2025-01-25 18:10:54 [http-nio-8080-exec-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@907738701 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:10:54 [http-nio-8080-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@500516703 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@712064389 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:10:54 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:54 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:10:54 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:10:54 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:10:54 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:10:54 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:10:54 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7b13855e]
+2025-01-25 18:10:54 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5d6463f8]
+2025-01-25 18:10:54 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6abc4d12]
+2025-01-25 18:11:16 [http-nio-8080-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-7][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/header::header" found in template common/layout/layout, line 33, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:11:16 [http-nio-8080-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-7][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/footer::footer" found in template common/layout/layout, line 37, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:11:16 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:16 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55af4d18] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:16 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@404291555 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:16 [http-nio-8080-exec-8] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:11:16 [http-nio-8080-exec-8] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:11:16 [http-nio-8080-exec-8] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:11:16 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55af4d18]
+2025-01-25 18:11:16 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:16 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a7edbb9] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:16 [http-nio-8080-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@477797018 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:16 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:11:16 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:11:16 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:11:16 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3a7edbb9]
+2025-01-25 18:11:16 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:16 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:16 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:16 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@155ea98a] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:16 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20ed3ee8] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:16 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68975f65] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:16 [http-nio-8080-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@975473828 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:16 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:16 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1145838135 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:11:16 [http-nio-8080-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1316964080 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:11:16 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:11:16 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:16 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:16 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:11:16 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:11:16 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:11:16 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:11:16 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:11:16 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@20ed3ee8]
+2025-01-25 18:11:16 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@68975f65]
+2025-01-25 18:11:16 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@155ea98a]
+2025-01-25 18:11:16 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:16 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:16 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:16 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4347ff2d] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:16 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f8ce7f9] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:16 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45327e35] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:16 [http-nio-8080-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1927947891 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:11:16 [http-nio-8080-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2006081897 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:11:16 [http-nio-8080-exec-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@575576478 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:16 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:16 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:16 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:16 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:11:16 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:11:16 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:11:16 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:11:16 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:11:16 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:11:16 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@45327e35]
+2025-01-25 18:11:16 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6f8ce7f9]
+2025-01-25 18:11:16 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4347ff2d]
+2025-01-25 18:11:18 [http-nio-8080-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-7][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/header::header" found in template common/layout/layout, line 33, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:11:18 [http-nio-8080-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-7][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/footer::footer" found in template common/layout/layout, line 37, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:11:18 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:18 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cee8018] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:18 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1406570881 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:18 [http-nio-8080-exec-8] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:11:18 [http-nio-8080-exec-8] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:11:18 [http-nio-8080-exec-8] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:11:18 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@cee8018]
+2025-01-25 18:11:18 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:18 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e418385] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:18 [http-nio-8080-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1713861277 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:18 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:11:18 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:11:18 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:11:18 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2e418385]
+2025-01-25 18:11:18 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:18 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:18 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:18 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7748e9ec] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:18 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bf5bd21] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:18 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@336feafb] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:18 [http-nio-8080-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@758120862 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:18 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:18 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:11:18 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1408354448 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:11:18 [http-nio-8080-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1057567337 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:11:18 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:18 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:18 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:11:18 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:11:18 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:11:18 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:11:18 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:11:18 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@336feafb]
+2025-01-25 18:11:18 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@bf5bd21]
+2025-01-25 18:11:18 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7748e9ec]
+2025-01-25 18:11:18 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:18 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:18 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:18 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76335014] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:18 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2db7738f] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:18 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66d2c65b] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:18 [http-nio-8080-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@315551378 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:11:18 [http-nio-8080-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@239931892 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:11:18 [http-nio-8080-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@607493263 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:18 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:18 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:18 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:18 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:11:18 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:11:18 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:11:18 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:11:18 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:11:18 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:11:18 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@76335014]
+2025-01-25 18:11:18 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2db7738f]
+2025-01-25 18:11:18 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@66d2c65b]
+2025-01-25 18:11:19 [http-nio-8080-exec-4] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-4][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/header::header" found in template common/layout/layout, line 33, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:11:19 [http-nio-8080-exec-4] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-4][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/footer::footer" found in template common/layout/layout, line 37, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:11:19 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:19 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@617c622a] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:19 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@113360157 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:19 [http-nio-8080-exec-8] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:11:19 [http-nio-8080-exec-8] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:11:19 [http-nio-8080-exec-8] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:11:19 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@617c622a]
+2025-01-25 18:11:19 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:19 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bf94c38] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:19 [http-nio-8080-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@793159136 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:19 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:11:19 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:11:19 [http-nio-8080-exec-6] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:11:19 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6bf94c38]
+2025-01-25 18:11:19 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:19 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:19 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:19 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cbf7ec5] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:19 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60c02ab1] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:19 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55632b0b] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:19 [http-nio-8080-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1297218502 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:19 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:19 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:11:19 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1633125514 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:11:19 [http-nio-8080-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@588239284 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:11:19 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:19 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:19 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:11:19 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:11:19 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:11:19 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:11:19 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:11:19 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@60c02ab1]
+2025-01-25 18:11:19 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@55632b0b]
+2025-01-25 18:11:19 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3cbf7ec5]
+2025-01-25 18:11:19 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:19 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:19 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:19 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d7acdbe] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:19 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49262313] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:19 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34fabc74] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:19 [http-nio-8080-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@145036541 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:11:19 [http-nio-8080-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1381947822 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:11:19 [http-nio-8080-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1107238748 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:19 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:19 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:19 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:19 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:11:19 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:11:19 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:11:19 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:11:19 [http-nio-8080-exec-3] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:11:19 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:11:19 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@34fabc74]
+2025-01-25 18:11:19 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6d7acdbe]
+2025-01-25 18:11:19 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@49262313]
+2025-01-25 18:11:41 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/header::header" found in template common/layout/layout, line 33, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:11:41 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/footer::footer" found in template common/layout/layout, line 37, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@247ad69c] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2043966797 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@247ad69c]
+2025-01-25 18:11:42 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:42 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d0d12a5] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:42 [http-nio-8080-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1773805827 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:11:42 [http-nio-8080-exec-10] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:11:42 [http-nio-8080-exec-10] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:11:42 [http-nio-8080-exec-10] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:11:42 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4d0d12a5]
+2025-01-25 18:11:42 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:42 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:42 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:42 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bb8b051] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:42 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57ac26d6] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:42 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d7863fc] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:42 [http-nio-8080-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1668263414 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:11:42 [http-nio-8080-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@335981410 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:11:42 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:42 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:42 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:11:42 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:11:42 [http-nio-8080-exec-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1670852782 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:42 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:42 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:11:42 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:11:42 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:11:42 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:11:42 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@1d7863fc]
+2025-01-25 18:11:42 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3bb8b051]
+2025-01-25 18:11:42 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@57ac26d6]
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:42 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:42 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65ec5f33] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:42 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@375b0661] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:42 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2932e780] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@399551268 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:11:42 [http-nio-8080-exec-4] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@510890677 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:11:42 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1970436906 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:42 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:42 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:11:42 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:11:42 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:11:42 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:11:42 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:11:42 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2932e780]
+2025-01-25 18:11:42 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@375b0661]
+2025-01-25 18:11:42 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@65ec5f33]
+2025-01-25 18:11:59 [http-nio-8080-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-7][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/header::header" found in template common/layout/layout, line 33, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:11:59 [http-nio-8080-exec-7] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-7][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/footer::footer" found in template common/layout/layout, line 37, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ad17cd9] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@563806119 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4ad17cd9]
+2025-01-25 18:11:59 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:59 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53dce4cd] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:59 [http-nio-8080-exec-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@906917606 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:59 [http-nio-8080-exec-5] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:11:59 [http-nio-8080-exec-5] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:11:59 [http-nio-8080-exec-5] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:11:59 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@53dce4cd]
+2025-01-25 18:11:59 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:59 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:59 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:59 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2820c1e8] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:59 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3669dc3c] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:59 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cd6e062] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:59 [http-nio-8080-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1192291661 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:11:59 [http-nio-8080-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@413173734 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:59 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:59 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:59 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:11:59 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:11:59 [http-nio-8080-exec-4] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1440586584 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:11:59 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:59 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:11:59 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:11:59 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:11:59 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7cd6e062]
+2025-01-25 18:11:59 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@3669dc3c]
+2025-01-25 18:11:59 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:11:59 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2820c1e8]
+2025-01-25 18:11:59 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:59 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:11:59 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2124a37a] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30d117cd] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:59 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21b511a1] was not registered for synchronization because synchronization is not active
+2025-01-25 18:11:59 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@799273989 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:11:59 [http-nio-8080-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1862552281 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1898414778 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:11:59 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:59 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:11:59 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:11:59 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:11:59 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:11:59 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:11:59 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@21b511a1]
+2025-01-25 18:11:59 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@2124a37a]
+2025-01-25 18:11:59 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@30d117cd]
+2025-01-25 18:12:18 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/header::header" found in template common/layout/layout, line 33, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:12:18 [http-nio-8080-exec-5] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-5][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/footer::footer" found in template common/layout/layout, line 37, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:12:18 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:12:18 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15921dc8] was not registered for synchronization because synchronization is not active
+2025-01-25 18:12:18 [http-nio-8080-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@2063633680 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:12:18 [http-nio-8080-exec-10] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:12:18 [http-nio-8080-exec-10] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:12:18 [http-nio-8080-exec-10] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:12:18 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@15921dc8]
+2025-01-25 18:12:18 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:12:18 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e94fdc4] was not registered for synchronization because synchronization is not active
+2025-01-25 18:12:18 [http-nio-8080-exec-3] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@580859568 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:12:18 [http-nio-8080-exec-3] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:12:18 [http-nio-8080-exec-3] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:12:18 [http-nio-8080-exec-3] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:12:18 [http-nio-8080-exec-3] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6e94fdc4]
+2025-01-25 18:12:18 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:12:18 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:12:18 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c5be938] was not registered for synchronization because synchronization is not active
+2025-01-25 18:12:18 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ca35d48] was not registered for synchronization because synchronization is not active
+2025-01-25 18:12:18 [http-nio-8080-exec-4] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@686128586 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:12:18 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:12:18 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:12:18 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b4d176] was not registered for synchronization because synchronization is not active
+2025-01-25 18:12:18 [http-nio-8080-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@414706097 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:12:18 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:12:18 [http-nio-8080-exec-6] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1881704024 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:12:18 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:12:18 [http-nio-8080-exec-6] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:12:18 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:12:18 [http-nio-8080-exec-6] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:12:18 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:12:18 [http-nio-8080-exec-6] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:12:18 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:12:18 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@6c5be938]
+2025-01-25 18:12:18 [http-nio-8080-exec-6] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@ca35d48]
+2025-01-25 18:12:18 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@4b4d176]
+2025-01-25 18:12:18 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:12:18 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79e6a2c4] was not registered for synchronization because synchronization is not active
+2025-01-25 18:12:18 [http-nio-8080-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@970740272 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:12:18 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:12:18 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:12:18 [http-nio-8080-exec-1] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:12:18 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:12:18 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fd8c5bf] was not registered for synchronization because synchronization is not active
+2025-01-25 18:12:18 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@79e6a2c4]
+2025-01-25 18:12:18 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@312983212 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:12:18 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:12:18 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:12:18 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8dc8d85] was not registered for synchronization because synchronization is not active
+2025-01-25 18:12:18 [http-nio-8080-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1170427077 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:12:18 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:12:18 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:12:18 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:12:18 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:12:18 [http-nio-8080-exec-2] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:12:18 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@8dc8d85]
+2025-01-25 18:12:18 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@5fd8c5bf]
+2025-01-25 18:13:35 [http-nio-8080-exec-6] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-6][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/header::header" found in template common/layout/layout, line 33, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/header::header}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:13:35 [http-nio-8080-exec-6] WARN  o.t.s.p.AbstractStandardFragmentInsertionTagProcessor - [THYMELEAF][http-nio-8080-exec-6][common/layout/layout] Deprecated unwrapped fragment expression "common/fragments/footer::footer" found in template common/layout/layout, line 37, col 10. Please use the complete syntax of fragment expressions instead ("~{common/fragments/footer::footer}"). The old, unwrapped syntax for fragment expressions will be removed in future versions of Thymeleaf.
+2025-01-25 18:13:35 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:13:35 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52821839] was not registered for synchronization because synchronization is not active
+2025-01-25 18:13:35 [http-nio-8080-exec-1] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@152341899 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:13:35 [http-nio-8080-exec-1] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:13:35 [http-nio-8080-exec-1] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:13:35 [http-nio-8080-exec-1] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:13:35 [http-nio-8080-exec-1] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@52821839]
+2025-01-25 18:13:35 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:13:35 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24f593a6] was not registered for synchronization because synchronization is not active
+2025-01-25 18:13:35 [http-nio-8080-exec-2] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@185080650 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:13:35 [http-nio-8080-exec-2] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==>  Preparing: SELECT CT_LNB_IDX AS ctLnbIdx, CT_LNB_ID AS ctLnbId, CT_LNB_NAME AS ctLnbName, CT_LNB_SUB_YN AS ctLnbSubYn, CT_LNB_URL AS ctLnbUrl, CT_LNB_USE_YN AS ctLnbUseYn FROM CT_LNB WHERE CT_LNB_USE_YN = 'Y' ORDER BY CT_LNB_IDX
+2025-01-25 18:13:35 [http-nio-8080-exec-2] DEBUG c.s.d.m.CommonMapper.selectLnbList - ==> Parameters: 
+2025-01-25 18:13:35 [http-nio-8080-exec-2] DEBUG c.s.d.m.CommonMapper.selectLnbList - <==      Total: 4
+2025-01-25 18:13:35 [http-nio-8080-exec-2] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@24f593a6]
+2025-01-25 18:13:35 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:13:35 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:13:35 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:13:35 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19378c2b] was not registered for synchronization because synchronization is not active
+2025-01-25 18:13:35 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@662edf10] was not registered for synchronization because synchronization is not active
+2025-01-25 18:13:35 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@500ee88d] was not registered for synchronization because synchronization is not active
+2025-01-25 18:13:35 [http-nio-8080-exec-9] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1179475628 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:13:35 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:13:35 [http-nio-8080-exec-5] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@5956558 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:13:35 [http-nio-8080-exec-4] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1392952427 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:13:35 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:13:35 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:13:35 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:13:35 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:13:35 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:13:35 [http-nio-8080-exec-5] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:13:35 [http-nio-8080-exec-4] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:13:35 [http-nio-8080-exec-9] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:13:35 [http-nio-8080-exec-9] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@19378c2b]
+2025-01-25 18:13:35 [http-nio-8080-exec-5] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@662edf10]
+2025-01-25 18:13:35 [http-nio-8080-exec-4] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@500ee88d]
+2025-01-25 18:13:35 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:13:35 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c155752] was not registered for synchronization because synchronization is not active
+2025-01-25 18:13:35 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:13:35 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Creating a new SqlSession
+2025-01-25 18:13:35 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11632ff1] was not registered for synchronization because synchronization is not active
+2025-01-25 18:13:35 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bce2b60] was not registered for synchronization because synchronization is not active
+2025-01-25 18:13:35 [http-nio-8080-exec-7] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@726191360 wrapping com.mysql.cj.jdbc.ConnectionImpl@168a1c93] will not be managed by Spring
+2025-01-25 18:13:35 [http-nio-8080-exec-8] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@1131672333 wrapping com.mysql.cj.jdbc.ConnectionImpl@4c8b2322] will not be managed by Spring
+2025-01-25 18:13:35 [http-nio-8080-exec-10] DEBUG o.m.s.t.SpringManagedTransaction - JDBC Connection [HikariProxyConnection@81350916 wrapping com.mysql.cj.jdbc.ConnectionImpl@74e98f85] will not be managed by Spring
+2025-01-25 18:13:35 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:13:35 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:13:35 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - ==>  Preparing: SELECT CT_LNB_SUB_IDX AS ctLnbSubIdx, CT_LNB_ID AS ctLnbId, CT_LNB_SUB_ID AS ctLnbSubId, CT_LNB_SUB_NAME AS ctLnbSubName, CT_LNB_SUB_URL AS ctLnbSubUrl FROM CT_LNB_SUB WHERE CT_LNB_ID = ? ORDER BY CT_LNB_SUB_IDX
+2025-01-25 18:13:35 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_COMPANY(String)
+2025-01-25 18:13:35 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_SERVICE(String)
+2025-01-25 18:13:35 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - ==> Parameters: CT_LNB_CONTACT(String)
+2025-01-25 18:13:35 [http-nio-8080-exec-7] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 1
+2025-01-25 18:13:35 [http-nio-8080-exec-8] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 2
+2025-01-25 18:13:35 [http-nio-8080-exec-10] DEBUG c.s.d.m.C.selectLnbSubList - <==      Total: 4
+2025-01-25 18:13:35 [http-nio-8080-exec-7] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@c155752]
+2025-01-25 18:13:35 [http-nio-8080-exec-10] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@7bce2b60]
+2025-01-25 18:13:35 [http-nio-8080-exec-8] DEBUG org.mybatis.spring.SqlSessionUtils - Closing non transactional SqlSession [org.apache.ibatis.session.defaults.DefaultSqlSession@11632ff1]
+2025-01-25 18:25:22 [RMI TCP Connection(24)-127.0.0.1] INFO  o.s.b.a.SpringApplicationAdminMXBeanRegistrar$SpringApplicationAdmin - Application shutdown requested.
+2025-01-25 18:25:22 [RMI TCP Connection(24)-127.0.0.1] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Commencing graceful shutdown. Waiting for active requests to complete
+2025-01-25 18:25:22 [tomcat-shutdown] INFO  o.a.coyote.http11.Http11NioProtocol - Pausing ProtocolHandler ["http-nio-8080"]
+2025-01-25 18:25:22 [tomcat-shutdown] INFO  o.s.b.w.e.tomcat.GracefulShutdown - Graceful shutdown complete
+2025-01-25 18:25:22 [RMI TCP Connection(24)-127.0.0.1] INFO  o.a.coyote.http11.Http11NioProtocol - Stopping ProtocolHandler ["http-nio-8080"]
+2025-01-25 18:25:22 [RMI TCP Connection(24)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown initiated...
+2025-01-25 18:25:22 [RMI TCP Connection(24)-127.0.0.1] INFO  com.zaxxer.hikari.HikariDataSource - HikariPool-1 - Shutdown completed.
