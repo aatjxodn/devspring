@@ -16,13 +16,11 @@ public class MainController {
 	public String Main() {
 		return "view/user/main/main";
 	}
-	
-	// information about us
+	// Information about us
 	@GetMapping("/about")
 	public String About() {
 		return "view/user/sub/about";
 	}
-	
 	// Service service1
 	@GetMapping("/service1")
 	public String Service1() {
@@ -43,38 +41,33 @@ public class MainController {
 	public String Service4() {
 		return "view/user/sub/service4";
 	}
-	
-	// contact mail
+	// Contact mail
 	@GetMapping("/email")
 	public String Email() {
 		return "view/user/sub/email";
 	}
-	// contact contact
+	// Contact contact
 	@GetMapping("/location")
 	public String Location(ModelMap model) {
 		model.addAttribute("KakaoAppKey", this.kakaoApiKey);
 		return "view/user/sub/location";
 	}
-	
 	// test board
 	@GetMapping("/board")
 	public String Board() {
 		return "view/user/sub/board";
 	}
-	
-	// admin
+	// Admin
 	@GetMapping("/admin")
 	public String Admin() {
 		return "view/admin/main/login";
 	}
-	
-	// admin Main
+	// Admin Main
 	@GetMapping("/adminMain")
 	public String AdminMain() {
 		return "view/admin/main/admin";
 	}
-	
-	// admin Main
+	// Admin Main
 	@GetMapping("/adminNew")
 	public String adminNew() {
 		return "view/admin/main/memberForm";

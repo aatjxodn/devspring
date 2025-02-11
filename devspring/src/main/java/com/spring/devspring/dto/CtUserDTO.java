@@ -40,8 +40,6 @@ public class CtUserDTO {
         user.setCtUserUpdateTime(LocalDateTime.now());
         user.setCtUserAuthority(UserRole.ADMIN);
         
-        System.out.println(user);
-        
         return user;
     }
 	

@@ -1,6 +1,7 @@
 package com.spring.devspring.config;
 
 public class ApiError {
+	
     private String code;
     private String message;
 

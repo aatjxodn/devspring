@@ -17,11 +17,12 @@ public class CustomAuthenticationEntryPoint implements AuthenticationEntryPoint 
 
 	@Override
     public void commence(HttpServletRequest request, HttpServletResponse response, AuthenticationException authException) throws IOException {
+		
         log.info("[CustomAuthenticationEntryPointHandler] :: {}", authException.getMessage());
         log.info("[CustomAuthenticationEntryPointHandler] :: {}", request.getRequestURL());
         log.info("[CustomAuthenticationEntryPointHandler] :: 로그인 인증 정보 없음");
 
-        response.sendRedirect("/");
+        response.sendRedirect("/admin");
     }
 
 }

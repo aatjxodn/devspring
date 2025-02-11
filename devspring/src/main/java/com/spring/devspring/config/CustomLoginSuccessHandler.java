@@ -17,10 +17,14 @@ public class CustomLoginSuccessHandler implements AuthenticationSuccessHandler {
 
     @Override
     public void onAuthenticationSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException {
+    	
         // Spring Security Context Holder 인증 정보 set
     	log.info("[CustomLoginSuccessHandler] :: " + authentication.getName());
+    	
         SecurityContextHolder.getContext().setAuthentication(authentication);
+        
         response.sendRedirect("/adminMain");
+        
     }
 
 }

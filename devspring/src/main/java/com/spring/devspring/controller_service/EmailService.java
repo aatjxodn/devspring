@@ -33,7 +33,9 @@ public class EmailService {
 
     // mail 전송
     public void getSendEmail(MailDTO params) {
+    	
     	try {
+    		
     		MimeMessage message = this.mailSender.createMimeMessage();
             MimeMessageHelper helper = new MimeMessageHelper(message, true);
 
@@ -48,6 +50,7 @@ public class EmailService {
             helper.setReplyTo(params.getEmail());  // 응답 시 사용자의 이메일로 답장 가능
 
             this.mailSender.send(message);
+            
     	} catch (Exception e) {
             throw new CustomException(ErrorCode.INTERNAL_SERVER_ERROR);
     	}

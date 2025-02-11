@@ -18,7 +18,10 @@ public class CustomLogoutSuccessHandler implements LogoutSuccessHandler {
 
     @Override
     public void onLogoutSuccess(HttpServletRequest request, HttpServletResponse response, Authentication authentication) throws IOException {
+    	
         log.info("[CustomLogoutSuccessHandler] :: 로그아웃");
+        
         response.sendRedirect("/admin");
+        
     }
 }

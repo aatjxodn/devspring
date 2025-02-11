@@ -26,17 +26,17 @@ public class CtUserController {
     private final PasswordEncoder passwordEncoder;
 
     // 사용자 - 회원가입
-    @PostMapping(value="/new")
-    public void memberForm(CtUserParaDTO ctUserParaDto){
+    @PostMapping(value="/insertUser")
+    public void getInsertUser(CtUserParaDTO ctUserParaDto){
         CtUserDTO member = CtUserDTO.createUser(ctUserParaDto, passwordEncoder);
-        this.djsUserService.saveMember(member);
+        this.djsUserService.getInsertUser(member);
     }
     
     // 사용자 - 세션 확인
-//    @GetMapping(value="/sessionInfo")
-//    @ResponseBody
-//    public HashMap<String, String> getSessionInfo(Principal principal, HttpServletRequest request) {
-//        return this.djsUserService.getSessionInfo(principal, request);
-//    }
+    @GetMapping(value="/sessionInfo")
+    @ResponseBody
+    public HashMap<String, String> getSessionInfo(Principal principal, HttpServletRequest request) {
+        return this.djsUserService.getSessionInfo(principal, request);
+    }
     
 }
