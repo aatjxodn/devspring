@@ -7,12 +7,20 @@ import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
 
 import com.spring.devspring.config.CustomException;
+import com.spring.devspring.config.CustomLoginFailHandler;
+import com.spring.devspring.config.CustomLoginSuccessHandler;
+import com.spring.devspring.config.CustomLogoutSuccessHandler;
 import com.spring.devspring.config.ErrorCode;
 import com.spring.devspring.dto.MailDTO;
+import com.spring.devspring.user.CtUserService;
 
 import jakarta.mail.internet.MimeMessage;
+import lombok.RequiredArgsConstructor;
+import lombok.extern.slf4j.Slf4j;
 
+@Slf4j
 @Service
+@RequiredArgsConstructor
 public class EmailService {
 
 	private final JavaMailSender mailSender;
@@ -22,10 +30,6 @@ public class EmailService {
 	
 	@Value("${mail.receiver}")
     private String receiverEmail;
-
-    public EmailService(JavaMailSender mailSender) {
-        this.mailSender = mailSender;
-    }
 
     // mail 전송
     public void getSendEmail(MailDTO params) {

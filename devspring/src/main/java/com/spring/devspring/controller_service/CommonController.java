@@ -11,30 +11,29 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.spring.devspring.dto.LnbDTO;
 import com.spring.devspring.dto.LnbSubDTO;
+import com.spring.devspring.mapper.CommonMapper;
+
+import lombok.RequiredArgsConstructor;
 
 @Controller
 @RequestMapping("/common")
+@RequiredArgsConstructor
 public class CommonController {
 	
-	@Autowired
-	private final CommonService CommonService;
-	
-    public CommonController(CommonService CommonService) {
-        this.CommonService = CommonService;
-    }
+	private final CommonService commonService;
 	
 	// lnb 조회
 	@GetMapping("/lnb")
 	@ResponseBody
 	public List<LnbDTO> getLnbList() {
-		return this.CommonService.getLnbList();
+		return this.commonService.getLnbList();
 	}
 	
 	// lnb Sub 조회
 	@GetMapping("/lnbSub/{id}")
 	@ResponseBody
 	public List<LnbSubDTO> getLnbSubList(@PathVariable("id") String id) {
-		return this.CommonService.getLnbSubList(id);
+		return this.commonService.getLnbSubList(id);
 	}
 
 }

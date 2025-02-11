@@ -7,16 +7,16 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.spring.devspring.dto.MailDTO;
+import com.spring.devspring.mapper.CommonMapper;
+
+import lombok.RequiredArgsConstructor;
 
 @Controller
 @RequestMapping("/mail")
+@RequiredArgsConstructor
 public class EmailController {
 
 	private final EmailService emailService;
-
-    public EmailController(EmailService emailService) {
-        this.emailService = emailService;
-    }
 
     @PostMapping("/sendEmail")
     @ResponseBody
