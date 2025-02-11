@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org">
+
+<head>
+    <meta charset="UTF-8">
+    <title>login</title>
+    <!-- 반응형 -->
+    <meta name="viewport" content="width=device-width,initial-scale=1">
+    <!-- jQuery CDN -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    
+    <!-- reset css -->
+	<link th:href="@{/css/common/fragments/reset.css}" rel="stylesheet">
+	<!-- login css -->
+	<link th:href="@{/css/view/admin/main/login.css}" rel="stylesheet">
+</head>
+<body>
+
+	<div class="login-layout">
+		<div class="login-con">
+			<div>
+				<span>Spring</span>
+			</div>
+			<form action="/login/loginProcess" id="login-form" method="post">
+				<input type="text" id="djsUserId" name="djsUserId" placeholder="ID를 입력해주세요.">
+				<input type="password" id="djsUserPwd" name="djsUserPwd" placeholder="Password를 입력해주세요.">
+				<input type="button" id="djsUserChangePwdButton" value="비밀번호 변경">
+				<input type="button" id="djsUserloginButton" value="로그인">
+			</form>
+		</div>
+	</div>
+	
+	<!-- login js -->
+	<script type="text/javascript" th:src="@{/js/view/admin/main/login.js}"></script>
+
+</body>
+</html>

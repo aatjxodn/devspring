@@ -14,52 +14,58 @@ public class MainController {
 	// root
 	@GetMapping("/")
 	public String Main() {
-		return "view/main";
+		return "view/user/main/main";
 	}
 	
 	// information about us
 	@GetMapping("/about")
 	public String About() {
-		return "view/about";
+		return "view/user/sub/about";
 	}
 	
 	// Service service1
 	@GetMapping("/service1")
 	public String Service1() {
-		return "view/service1";
+		return "view/user/sub/service1";
 	}
 	// Service service2
 	@GetMapping("/service2")
 	public String Service2() {
-		return "view/service2";
+		return "view/user/sub/service2";
 	}
 	// Service service3
 	@GetMapping("/service3")
 	public String Service3() {
-		return "view/service3";
+		return "view/user/sub/service3";
 	}
 	// Service service4
 	@GetMapping("/service4")
 	public String Service4() {
-		return "view/service4";
+		return "view/user/sub/service4";
 	}
 	
 	// contact mail
 	@GetMapping("/email")
 	public String Email() {
-		return "view/email";
+		return "view/user/sub/email";
 	}
 	// contact contact
 	@GetMapping("/location")
 	public String Location(ModelMap model) {
 		model.addAttribute("KakaoAppKey", this.kakaoApiKey);
-		return "view/location";
+		return "view/user/sub/location";
 	}
 	
 	// test board
 	@GetMapping("/board")
 	public String Board() {
-		return "view/board";
+		return "view/user/sub/board";
+	}
+	
+	// admin
+	@GetMapping("/admin")
+	public String Admin() {
+		return "view/admin/main/login";
 	}
 
 }

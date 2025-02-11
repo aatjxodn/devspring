@@ -1,0 +1,56 @@
+/* --------------------- footer --------------------- */
+#footer {
+	width: 100%;
+	height: 160px;
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	background-color: #000;
+}
+#footer div span {
+	font-size: 2rem;
+	font-weight: bold;
+	color: #fff;
+	opacity: 0.8;
+}
+#footer div div {
+	font-size: 1rem;
+	color: #fff;
+	opacity: 0.5;
+}
+
+
+/* --------------------- 반응형 --------------------- */
+/* Extra small (모바일 - 작은 화면) */
+@media (max-width: 575px) {
+	#footer div span {
+		font-size: 1.5rem;
+	}
+	#footer div div {
+		font-size: 0.7rem;
+	}
+}
+/* Small (모바일 - 일반 크기) */
+@media (min-width: 576px) and (max-width: 767px) {
+	#footer div span {
+		font-size: 1.5rem;
+	}
+	#footer div div {
+		font-size: 0.8rem;
+	}
+}
+/* Medium (태블릿) */
+@media (min-width: 768px) and (max-width: 991px) {
+	#footer div span {
+		font-size: 1.5rem;
+	}
+	#footer div div {
+		font-size: 0.8rem;
+	}
+}
+/* Large (작은 데스크탑) */
+@media (min-width: 992px) and (max-width: 1199px) {
+}
+/* Extra large (일반 데스크탑) */
+@media (min-width: 1200px) {
+}
