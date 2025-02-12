@@ -20,6 +20,22 @@
         WHERE CT_USER_ID = #{ctUserId}
     </select>
     
+    <select id="findByCtUserIdAndCtUserPwd" resultType="com.spring.devspring.dto.CtUserDTO">
+        SELECT	
+        	CT_USER_IDX AS ctUserIdx,
+        	CT_USER_ID AS ctUserId,
+        	CT_USER_PWD AS ctUserPwd,
+        	CT_USER_NAME AS ctUserName,
+        	CT_USER_EMAIL AS ctUserEmail,
+        	CT_USER_PHONE_NUMBER AS ctUserPhoneNumber,
+        	CT_USER_AUTHORITY AS ctUserAuthority,
+        	CT_USER_CREATE_TIME AS ctUserCreateTime,
+        	CT_USER_UPDATE_TIME AS ctUserUpdateTime
+        FROM CT_USER
+        WHERE CT_USER_ID = #{ctUserId}
+        AND CT_USER_PWD = #{ctUserPwd}
+    </select>
+    
     <insert id="insertUser" parameterType="com.spring.devspring.dto.CtUserDTO">
     	INSERT INTO CT_USER(CT_USER_ID, CT_USER_PWD, CT_USER_NAME, CT_USER_EMAIL, CT_USER_PHONE_NUMBER, CT_USER_AUTHORITY, CT_USER_CREATE_TIME, CT_USER_UPDATE_TIME)
     	VALUES (
@@ -33,5 +49,11 @@
     		#{ctUserUpdateTime}
     	)
     </insert>
+    
+    <update id="updatePassword" parameterType="com.spring.devspring.dto.CtUserDTO">
+    	UPDATE CT_USER
+    		SET CT_USER_PWD = #{ctUserPwdNewConfirm}
+    	WHERE CT_USER_ID = #{ctUserId}
+    </update>
     
 </mapper>

@@ -14,8 +14,12 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
+import com.spring.devspring.config.CustomException;
+import com.spring.devspring.config.ErrorCode;
 import com.spring.devspring.dto.CtUserDTO;
 import com.spring.devspring.mapper.CtUserMapper;
+
+import groovyjarjarantlr4.v4.parse.ANTLRParser.throwsSpec_return;
 
 @Slf4j
 @Service
@@ -97,6 +101,23 @@ public class CtUserService implements UserDetailsService {
 		}
 		
 		return result;
+	}
+
+	// 사용자 - 비밀번호 변경
+	public void getUpdatePassword(CtUserDTO ctUserDto) {
+		
+		CtUserDTO ctUser = this.ctUserMapper.findByCtUserIdAndCtUserPwd(ctUserDto.getCtUserId(), ctUserDto.getCtUserPwd());
+		
+		if (ctUser == null) {
+			throw new CustomException(ErrorCode.INVALID_REQUEST);
+		}
+		
+		try {
+			ctUser.setCtUserPwd(ctUserDto.getCtUserPwdNewConfirm());
+			this.ctUserMapper.updatePassword(ctUserDto);
+		} catch (Exception e) {
+			throw new CustomException(ErrorCode.INVALID_REQUEST);
+		}
 	}
 
 }

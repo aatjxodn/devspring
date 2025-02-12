@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html xmlns:th="http://www.thymeleaf.org">
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
 
 <head>
     <meta charset="UTF-8">
@@ -10,7 +10,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     
     <!-- reset css -->
-	<link th:href="@{/css/common/fragments/reset.css}" rel="stylesheet">
+	<link th:href="@{/css/common/admin/fragments/reset.css}" rel="stylesheet">
 	<!-- login css -->
 	<link th:href="@{/css/view/admin/main/login.css}" rel="stylesheet">
 </head>
@@ -19,14 +19,37 @@
 	<div class="login-layout">
 		<div class="login-con">
 			<div>
-				<span>Spring</span>
+				<span>CeraTst Management</span>
 			</div>
 			<form action="/login/loginProcess" id="login-form" method="post">
 				<input type="text" id="ctUserId" name="ctUserId" placeholder="ID를 입력해주세요.">
 				<input type="password" id="ctUserPwd" name="ctUserPwd" placeholder="Password를 입력해주세요.">
-				<input type="button" id="ctUserChangePwdButton" value="비밀번호 변경">
+				<input type="button" id="ctUserUpdatePwdButton" value="비밀번호 변경">
 				<input type="button" id="ctUserloginButton" value="로그인">
 			</form>
+		</div>
+	</div>
+	
+	<div class="modal-layout">
+		<div class="modal-con">
+			<div class="modal-con-title">
+				<span>비밀번호 변경</span>
+			</div>
+			<div class="passwordUpdate-form">
+				<span>아이디<b>*</b></span>
+				<input type="text" id="updateCtUserId" placeholder="ID를 입력해주세요.">
+				<span>기존 비밀번호<b>*</b></span>
+				<input type="password" id="updateCtUserPwd" placeholder="기존 Password를 입력해주세요.">
+				<span>변경할 비밀번호<b>*</b></span>
+				<input type="password" id="updateCtUserPwdNew" placeholder="변경할 Password를 입력해주세요.">
+				<span>비밀번호 확인<b>*</b></span>
+				<input type="password" id="updateCtUserPwdNewConfirm" placeholder="변경할 Password와 동일하게 입력해주세요.">
+				<div class="modal-button-box">
+					<div class="modal-button-insert" id="passwordUpdateInsertBut">생성</div>
+					<div class="modal-button-update" id="passwordUpdateUpdateBut">변경</div>
+					<div class="modal-button-close" id="passwordUpdateCloseBut">닫기</div>
+				</div>
+			</div>
 		</div>
 	</div>
 	

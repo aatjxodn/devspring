@@ -14,4 +14,8 @@ public interface CtUserMapper {
 
 	void insertUser(CtUserDTO ctUserDTO);
 
+	void updatePassword(CtUserDTO ctUserDto);
+
+	CtUserDTO findByCtUserIdAndCtUserPwd(@Param("ctUserId") String ctUserId,@Param("ctUserPwd") String ctUserPwd);
+
 }

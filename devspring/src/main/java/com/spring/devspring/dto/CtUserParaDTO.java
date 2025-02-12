@@ -11,6 +11,7 @@ public class CtUserParaDTO {
 	
     private String ctUserId;
     private String ctUserPwd;
+    private String ctUserPwdNewConfirm;
     private String ctUserName;
     private String ctUserEmail;
     private String ctUserPhoneNumber;

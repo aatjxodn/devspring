@@ -7,11 +7,12 @@
 	color: #000;
 	list-style: none;
 	text-decoration: none;
-	font-size: 1rem;
 	box-sizing: border-box;
+	outline: none;
 }
 html, body {
 	font-family: 'ubuntu', sans-serif;
+	font-size: 11px;
 }
 
 /* --------------------- header --------------------- */
@@ -19,7 +20,7 @@ html, body {
 	width: 100%;
 	height: 80px;
 	display: flex;
-	justify-content: space-around;
+	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #aaaaaa;
 	z-index: 1001;
@@ -36,57 +37,16 @@ html, body {
 	font-weight: bold;
 }
 
-/* --------------------- header lnb --------------------- */
-.header_lnb {
+/* --------------------- header-user --------------------- */
+.header-user {
+	
+}
+.user-lnb {
 	display: flex;
 }
-.lnb {
-	display: flex;
-	position: relative;
+.user-lnb li {
+	margin: 0 10px;
 }
-.lnb li {
-	padding: 30px;
-}
-.lnb li a {
-	font-size: 1.2rem;
-	font-weight: bold;
-	color: #333333;
-	cursor: pointer;
-}
-.lnb li ul {
-	display: none;
-	position: absolute;
-	top: 65px;
-	border: 1px solid #aaaaaa;
-	background-color: #fff;
-	box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22);
-	z-index: 1000;
-}
-.lnb li ul li {
-	padding: 20px;
-	text-align: center;
-}
-.lnb li ul li a {
-	font-size: 1rem;
-	font-weight: bold;
-	color: #666666;
-	cursor: pointer;
-}
-
-/* --------------------- header language --------------------- */
-.language  {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-}
-.language li {
-	border-right: 1px solid #aaaaaa;
-	padding: 0 10px;
-}
-.language li:last-child {
-	border-right: none;
-}
-
 /* --------------------- header hamberger button --------------------- */
 .header_hamburger {
 	display: none;

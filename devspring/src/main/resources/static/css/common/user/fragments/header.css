@@ -7,11 +7,11 @@
 	color: #000;
 	list-style: none;
 	text-decoration: none;
-	font-size: 1rem;
 	box-sizing: border-box;
 }
 html, body {
 	font-family: 'ubuntu', sans-serif;
+	font-size: 11px;
 }
 
 /* --------------------- header --------------------- */
@@ -32,7 +32,7 @@ html, body {
 	
 }
 .header_icon span {
-	font-size: 2rem;
+	font-size: 2.5rem;
 	font-weight: bold;
 }
 
@@ -48,7 +48,7 @@ html, body {
 	padding: 30px;
 }
 .lnb li a {
-	font-size: 1.2rem;
+	font-size: 1.5rem;
 	font-weight: bold;
 	color: #333333;
 	cursor: pointer;
@@ -67,7 +67,7 @@ html, body {
 	text-align: center;
 }
 .lnb li ul li a {
-	font-size: 1rem;
+	font-size: 1.2rem;
 	font-weight: bold;
 	color: #666666;
 	cursor: pointer;

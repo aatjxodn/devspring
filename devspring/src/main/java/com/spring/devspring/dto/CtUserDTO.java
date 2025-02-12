@@ -18,6 +18,7 @@ public class CtUserDTO {
 	private int ctUserIdx;
 	private String ctUserId;
 	private String ctUserPwd;
+	private String ctUserPwdNewConfirm;
 	private String ctUserName;
 	private String ctUserEmail;
 	private String ctUserPhoneNumber;
@@ -39,6 +40,19 @@ public class CtUserDTO {
         user.setCtUserCreateTime(LocalDateTime.now());
         user.setCtUserUpdateTime(LocalDateTime.now());
         user.setCtUserAuthority(UserRole.ADMIN);
+        
+        return user;
+    }
+    
+    public static CtUserDTO passwordUpdateUser(CtUserParaDTO ctUserParaDTO, PasswordEncoder passwordEncoder){
+    	
+    	CtUserDTO user = new CtUserDTO();
+        
+        user.setCtUserId(ctUserParaDTO.getCtUserId());
+        user.setCtUserPwd(passwordEncoder.encode(ctUserParaDTO.getCtUserPwd()));
+        user.setCtUserPwdNewConfirm(passwordEncoder.encode(ctUserParaDTO.getCtUserPwdNewConfirm()));
+        
+        user.setCtUserUpdateTime(LocalDateTime.now());
         
         return user;
     }
