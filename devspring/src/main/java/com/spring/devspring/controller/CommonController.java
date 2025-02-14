@@ -24,15 +24,15 @@ public class CommonController {
 	// lnb 조회
 	@GetMapping("/lnb/{userAuthority}")
 	@ResponseBody
-	public List<LnbDTO> getLnbList(@PathVariable("userAuthority") String userAuthority) {
-		return this.commonService.getLnbList(userAuthority);
+	public List<LnbDTO> getLnb(@PathVariable("userAuthority") String userAuthority) {
+		return this.commonService.getLnb(userAuthority);
 	}
 	
 	// lnb Sub 조회
 	@GetMapping("/lnbSub/{id}")
 	@ResponseBody
-	public List<LnbSubDTO> getLnbSubList(@PathVariable("id") String id) {
-		return this.commonService.getLnbSubList(id);
+	public List<LnbSubDTO> getLnbSub(@PathVariable("id") String id) {
+		return this.commonService.getLnbSub(id);
 	}
 
 }

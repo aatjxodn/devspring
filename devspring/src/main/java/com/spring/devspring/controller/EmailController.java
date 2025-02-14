@@ -12,13 +12,13 @@ import com.spring.devspring.service.EmailService;
 import lombok.RequiredArgsConstructor;
 
 @Controller
-@RequestMapping("/mail")
+@RequestMapping("/email")
 @RequiredArgsConstructor
 public class EmailController {
 
 	private final EmailService emailService;
 
-    @PostMapping("/sendEmail")
+    @PostMapping("/send")
     @ResponseBody
     public void getSendEmail(@RequestBody MailDTO params) {
     	this.emailService.getSendEmail(params);

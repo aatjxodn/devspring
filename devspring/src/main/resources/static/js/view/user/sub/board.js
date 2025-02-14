@@ -15,7 +15,7 @@ function boardList(i) {
 	
 	
 	$.ajax({
-		    url: 'board/boardList',
+		    url: 'board/boards',
 		    method: 'GET',
 			data: params,
 			dataType: 'json',
@@ -72,8 +72,13 @@ function boardList(i) {
 				paging.append(pagingLi);
 
 		    },
-			error: function(request, status, error){
-				alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+			error: function(jqXHR) {
+				if (jqXHR.responseJSON) {
+					alert(jqXHR.responseJSON.error + " : " + jqXHR.responseJSON.status + ", " + jqXHR.responseJSON.message);
+					console.log(jqXHR.responseJSON);
+				} else {
+					alert("에러 메세지를 찾을 수 없습니다.");
+				}
 			}
 		});
 }

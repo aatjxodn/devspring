@@ -69,8 +69,8 @@ $('#ctUserUpdatePwdButton').click(function() {
 		}
 		
 		$.ajax({
-		    url: '/user/passwordUpdate',
-		    method: 'POST',
+		    url: '/user/user',
+		    method: 'PATCH',
 			data: JSON.stringify(params),
 			dataType: 'json',
 			contentType: 'application/json; charset=utf-8',
@@ -78,13 +78,14 @@ $('#ctUserUpdatePwdButton').click(function() {
 				console.log(data);
 				alert("비밀번호 변경 완료됐습니다.");
 			},
-			error: function (request, error) {
-		        console.log("code: " + request.status)
-		        console.log("message: " + request.responseText)
-		        console.log("error: " + error);
-				alert(request.status + " : " + error);
-		    }
-			
+			error: function(jqXHR) {
+				if (jqXHR.responseJSON) {
+					alert(jqXHR.responseJSON.error + " : " + jqXHR.responseJSON.status + ", " + jqXHR.responseJSON.message);
+					console.log(jqXHR.responseJSON);
+				} else {
+					alert("에러 메세지를 찾을 수 없습니다.");
+				}
+			}
 		});
 		
 	});

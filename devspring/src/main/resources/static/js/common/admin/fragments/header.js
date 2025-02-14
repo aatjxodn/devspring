@@ -8,18 +8,19 @@ $(document).ready(function() {
 function sessionInfo() {
 
 	$.ajax({
-		url: '/user/sessionInfo',
+		url: '/user/session',
 		method: 'GET',
 		dataType: 'json',
 		success: function(data) {
-			console.log(data);
-			
 			$('.header-user-name').text(data.ctUserName);
 		},
-		error: function(request, status, error) {
-			console.log("code: " + request.status)
-			console.log("message: " + request.responseText)
-			console.log("error: " + error);
+		error: function(jqXHR) {
+			if (jqXHR.responseJSON) {
+				alert(jqXHR.responseJSON.error + " : " + jqXHR.responseJSON.status + ", " + jqXHR.responseJSON.message);
+				console.log(jqXHR.responseJSON);
+			} else {
+				alert("에러 메세지를 찾을 수 없습니다.");
+			}
 		}
 
 	});

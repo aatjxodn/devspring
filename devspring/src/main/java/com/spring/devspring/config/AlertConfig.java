@@ -10,7 +10,8 @@ public class AlertConfig {
         response.setContentType("text/html; charset=euc-kr");
         response.setCharacterEncoding("euc-kr");
     }
- 
+	
+	// alert 호출
     public static void alert(HttpServletResponse response, String alertText) throws IOException {
         init(response);
         PrintWriter out = response.getWriter();
@@ -18,6 +19,7 @@ public class AlertConfig {
         out.flush();
     }
  
+    // alert 호출 후 페이지 이동
     public static void alertAndMovePage(HttpServletResponse response, String alertText, String nextPage)
             throws IOException {
         init(response);
@@ -26,6 +28,7 @@ public class AlertConfig {
         out.flush();
     }
  
+    // alert 호출 후 이전 페이지 이동
     public static void alertAndBackPage(HttpServletResponse response, String alertText) throws IOException {
         init(response);
         PrintWriter out = response.getWriter();

@@ -21,7 +21,7 @@ public class CommonService {
 	private final CommonMapper CommonMapper;
 
 	// lnb 조회
-	public List<LnbDTO> getLnbList(String userAuthority) {
+	public List<LnbDTO> getLnb(String userAuthority) {
 		try {
 			return this.CommonMapper.selectLnbList(userAuthority);
 		} catch (Exception e) {
@@ -30,7 +30,7 @@ public class CommonService {
 	}
 	
 	// lnb Sub 조회
-	public List<LnbSubDTO> getLnbSubList(String id) {
+	public List<LnbSubDTO> getLnbSub(String id) {
 		try {
 			return this.CommonMapper.selectLnbSubList(id);
 		} catch (Exception e) {

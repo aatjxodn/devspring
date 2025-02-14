@@ -49,16 +49,21 @@ $('.emailBut').click(function() {
     };
 	
     $.ajax({
-        url: '/mail/sendEmail',
+        url: '/email/send',
         method: 'POST',
         data: JSON.stringify(params),
         contentType: 'application/json',
         success: function(data) {
             alert('The email has been sent successfully.');
         },
-        error: function(request, status, error) {
-            alert("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);
-        }
+		error: function(jqXHR) {
+			if (jqXHR.responseJSON) {
+				alert(jqXHR.responseJSON.error + " : " + jqXHR.responseJSON.status + ", " + jqXHR.responseJSON.message);
+				console.log(jqXHR.responseJSON);
+			} else {
+				alert("에러 메세지를 찾을 수 없습니다.");
+			}
+		}
     });
 	
 });
