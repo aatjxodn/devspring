@@ -1,10 +1,12 @@
-package com.spring.devspring.config;
+package com.spring.devspring.security;
 
 import java.io.IOException;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.authentication.AuthenticationFailureHandler;
 import org.springframework.stereotype.Component;
+
+import com.spring.devspring.config.AlertConfig;
 
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
@@ -19,7 +21,7 @@ public class CustomLoginFailHandler implements AuthenticationFailureHandler {
 		
         log.info("[CustomLoginFailHandler] :: " + exception.getMessage());
         
-        alertConfig.alertAndMovePage(response, "로그인 실패", "/admin");
+        AlertConfig.alertAndMovePage(response, "로그인 실패", "/admin");
         
         // response.sendRedirect("/admin");
         

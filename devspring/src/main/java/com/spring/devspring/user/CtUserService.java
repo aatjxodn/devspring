@@ -14,12 +14,10 @@ import org.springframework.security.core.userdetails.UserDetailsService;
 import org.springframework.security.core.userdetails.UsernameNotFoundException;
 import org.springframework.stereotype.Service;
 
-import com.spring.devspring.config.CustomException;
-import com.spring.devspring.config.ErrorCode;
 import com.spring.devspring.dto.CtUserDTO;
+import com.spring.devspring.exception.CustomException;
+import com.spring.devspring.exception.ErrorCode;
 import com.spring.devspring.mapper.CtUserMapper;
-
-import groovyjarjarantlr4.v4.parse.ANTLRParser.throwsSpec_return;
 
 @Slf4j
 @Service

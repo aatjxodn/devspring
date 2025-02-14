@@ -4,7 +4,7 @@ import java.io.IOException;import java.io.PrintWriter;
 
 import jakarta.servlet.http.HttpServletResponse;
 
-public class alertConfig {
+public class AlertConfig {
 
 	public static void init(HttpServletResponse response) {
         response.setContentType("text/html; charset=euc-kr");

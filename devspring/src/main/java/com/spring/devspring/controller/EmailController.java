@@ -1,4 +1,4 @@
-package com.spring.devspring.controller_service;
+package com.spring.devspring.controller;
 
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PostMapping;
@@ -7,7 +7,7 @@ import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.spring.devspring.dto.MailDTO;
-import com.spring.devspring.mapper.CommonMapper;
+import com.spring.devspring.service.EmailService;
 
 import lombok.RequiredArgsConstructor;
 

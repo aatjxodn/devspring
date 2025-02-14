@@ -1,18 +1,12 @@
-package com.spring.devspring.controller_service;
+package com.spring.devspring.service;
 
 import org.springframework.beans.factory.annotation.Value;
-import org.springframework.mail.SimpleMailMessage;
 import org.springframework.mail.javamail.JavaMailSender;
 import org.springframework.mail.javamail.MimeMessageHelper;
 import org.springframework.stereotype.Service;
-
-import com.spring.devspring.config.CustomException;
-import com.spring.devspring.config.CustomLoginFailHandler;
-import com.spring.devspring.config.CustomLoginSuccessHandler;
-import com.spring.devspring.config.CustomLogoutSuccessHandler;
-import com.spring.devspring.config.ErrorCode;
 import com.spring.devspring.dto.MailDTO;
-import com.spring.devspring.user.CtUserService;
+import com.spring.devspring.exception.CustomException;
+import com.spring.devspring.exception.ErrorCode;
 
 import jakarta.mail.internet.MimeMessage;
 import lombok.RequiredArgsConstructor;

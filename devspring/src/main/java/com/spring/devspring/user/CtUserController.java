@@ -28,7 +28,8 @@ public class CtUserController {
 
     // 사용자 - 회원가입
     @PostMapping(value="/insertUser")
-    public void getInsertUser(CtUserParaDTO ctUserParaDto){
+    @ResponseBody
+    public void getInsertUser(@RequestBody(required = false) CtUserParaDTO ctUserParaDto){
         CtUserDTO user = CtUserDTO.createUser(ctUserParaDto, passwordEncoder);
         this.djsUserService.getInsertUser(user);
     }
@@ -43,7 +44,7 @@ public class CtUserController {
     // 사용자 - 비밀번호 변경
     @PostMapping(value="/passwordUpdate")
     @ResponseBody
-    public void getUpdatePassword(@RequestBody(required=false) CtUserParaDTO ctUserParaDto) {
+    public void getUpdatePassword(@RequestBody(required = false) CtUserParaDTO ctUserParaDto) {
     	CtUserDTO user = CtUserDTO.passwordUpdateUser(ctUserParaDto, passwordEncoder);
         this.djsUserService.getUpdatePassword(user);
     }

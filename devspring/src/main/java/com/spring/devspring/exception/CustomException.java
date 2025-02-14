@@ -1,4 +1,4 @@
-package com.spring.devspring.config;
+package com.spring.devspring.exception;
 
 public class CustomException extends RuntimeException {
 	

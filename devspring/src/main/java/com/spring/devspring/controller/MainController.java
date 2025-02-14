@@ -1,4 +1,4 @@
-package com.spring.devspring.controller_service;
+package com.spring.devspring.controller;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Controller;

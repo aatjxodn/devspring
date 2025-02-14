@@ -1,4 +1,4 @@
-package com.spring.devspring.controller_service;
+package com.spring.devspring.service;
 
 import java.util.LinkedHashMap;
 import java.util.Map;
@@ -6,9 +6,9 @@ import java.util.Map;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
-import com.spring.devspring.config.CustomException;
-import com.spring.devspring.config.ErrorCode;
 import com.spring.devspring.dto.PagingDTO;
+import com.spring.devspring.exception.CustomException;
+import com.spring.devspring.exception.ErrorCode;
 import com.spring.devspring.mapper.BoardMapper;
 
 @Service

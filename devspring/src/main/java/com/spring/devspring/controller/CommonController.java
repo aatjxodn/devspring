@@ -1,8 +1,7 @@
-package com.spring.devspring.controller_service;
+package com.spring.devspring.controller;
 
 import java.util.List;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -11,7 +10,7 @@ import org.springframework.web.bind.annotation.ResponseBody;
 
 import com.spring.devspring.dto.LnbDTO;
 import com.spring.devspring.dto.LnbSubDTO;
-import com.spring.devspring.mapper.CommonMapper;
+import com.spring.devspring.service.CommonService;
 
 import lombok.RequiredArgsConstructor;
 

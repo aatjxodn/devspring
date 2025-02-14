@@ -1,4 +1,4 @@
-package com.spring.devspring.config;
+package com.spring.devspring.mysql;
 
 import org.apache.ibatis.session.SqlSessionFactory;
 

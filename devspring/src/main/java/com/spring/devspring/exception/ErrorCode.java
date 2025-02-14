@@ -1,4 +1,4 @@
-package com.spring.devspring.config;
+package com.spring.devspring.exception;
 
 import org.springframework.http.HttpStatus;
 

@@ -1,10 +1,11 @@
-package com.spring.devspring.config;
+package com.spring.devspring.security;
 
 import org.springframework.security.core.AuthenticationException;
 import org.springframework.security.web.AuthenticationEntryPoint;
 import org.springframework.stereotype.Component;
 
-import jakarta.servlet.ServletException;
+import com.spring.devspring.config.AlertConfig;
+
 import jakarta.servlet.http.HttpServletRequest;
 import jakarta.servlet.http.HttpServletResponse;
 import lombok.extern.slf4j.Slf4j;
@@ -22,7 +23,7 @@ public class CustomAuthenticationEntryPoint implements AuthenticationEntryPoint 
         log.info("[CustomAuthenticationEntryPointHandler] :: {}", request.getRequestURL());
         log.info("[CustomAuthenticationEntryPointHandler] :: 로그인 인증 정보 없음");
 
-        alertConfig.alertAndMovePage(response, "로그인 인증 정보 없음", "/admin");
+        AlertConfig.alertAndMovePage(response, "로그인 인증 정보 없음", "/admin");
         
         // response.sendRedirect("/admin");
     }
