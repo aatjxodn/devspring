@@ -4,6 +4,7 @@ import java.time.LocalDateTime;
 
 import org.springframework.security.crypto.password.PasswordEncoder;
 
+import com.fasterxml.jackson.annotation.JsonFormat;
 import com.spring.devspring.user.UserRole;
 
 import lombok.AllArgsConstructor;
@@ -23,7 +24,9 @@ public class CtUserDTO {
 	private String ctUserEmail;
 	private String ctUserPhoneNumber;
 	
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm", timezone = "Asia/Seoul")
 	private LocalDateTime ctUserCreateTime;
+	@JsonFormat(shape = JsonFormat.Shape.STRING, pattern = "yyyy-MM-dd HH:mm", timezone = "Asia/Seoul")
 	private LocalDateTime ctUserUpdateTime;
 	
 	private UserRole ctUserAuthority;
