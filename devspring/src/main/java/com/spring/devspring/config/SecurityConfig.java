@@ -37,7 +37,7 @@ public class SecurityConfig {
         		.loginPage("/admin")
         		.usernameParameter("ctUserId")
         		.passwordParameter("ctUserPwd")
-                .loginProcessingUrl("/login/loginProcess")
+                .loginProcessingUrl("/user/loginProcess")
                 .defaultSuccessUrl("/adminMain")
                 .successHandler(customLoginSuccessHandler)
                 .failureHandler(customLoginFailHandler)
@@ -45,7 +45,7 @@ public class SecurityConfig {
         
         // logout 설정
         http.logout(logout -> logout
-                .logoutUrl("/logout")
+                .logoutUrl("/user/logout")
                 .logoutSuccessHandler(customLogoutSuccessHandler)
                 .invalidateHttpSession(true)
                 .deleteCookies("JSESSIONID")
@@ -54,15 +54,23 @@ public class SecurityConfig {
         
 	     // http request 인증 설정
 	    http.authorizeHttpRequests(authorize -> authorize
-	            .requestMatchers("/**").permitAll()
-	            .requestMatchers("/css/**", "/js/**", "/images/**").permitAll()
-	            .anyRequest().authenticated()
+	            .requestMatchers("/adminMain").authenticated()
+	            .requestMatchers("/css/**", "/js/**", "/images/**","/mapper/**").permitAll()
+	            .anyRequest().permitAll()
 	    );
 
 	    // 인증 없는 사용자 URL 접근 시
         http.exceptionHandling(handling -> handling
                 .authenticationEntryPoint(new CustomAuthenticationEntryPoint()))
         ;
+        
+        // 세션 관리 설정 (세션 타임아웃 30분)
+        http.sessionManagement(session -> session
+                .sessionFixation().none()
+                .invalidSessionUrl("/login?sessionExpired=true") // 세션 만료 시 리디렉션
+                .maximumSessions(1) // 동시에 하나의 세션만 허용
+                .maxSessionsPreventsLogin(false) // 기존 세션 종료 후 새 로그인 허용
+        );
 	    
 	    // csrf disable
         http.csrf(AbstractHttpConfigurer::disable);

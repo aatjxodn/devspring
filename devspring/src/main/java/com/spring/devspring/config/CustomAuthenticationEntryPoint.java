@@ -22,7 +22,9 @@ public class CustomAuthenticationEntryPoint implements AuthenticationEntryPoint 
         log.info("[CustomAuthenticationEntryPointHandler] :: {}", request.getRequestURL());
         log.info("[CustomAuthenticationEntryPointHandler] :: 로그인 인증 정보 없음");
 
-        response.sendRedirect("/admin");
+        alertConfig.alertAndMovePage(response, "로그인 인증 정보 없음", "/admin");
+        
+        // response.sendRedirect("/admin");
     }
 
 }

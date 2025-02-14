@@ -19,7 +19,9 @@ public class CustomLoginFailHandler implements AuthenticationFailureHandler {
 		
         log.info("[CustomLoginFailHandler] :: " + exception.getMessage());
         
-        response.sendRedirect("/admin");
+        alertConfig.alertAndMovePage(response, "로그인 실패", "/admin");
+        
+        // response.sendRedirect("/admin");
         
     }
 

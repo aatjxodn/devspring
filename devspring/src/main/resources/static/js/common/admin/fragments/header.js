@@ -13,6 +13,8 @@ function sessionInfo() {
 		dataType: 'json',
 		success: function(data) {
 			console.log(data);
+			
+			$('.header-user-name').text(data.ctUserName);
 		},
 		error: function(request, status, error) {
 			console.log("code: " + request.status)
@@ -22,3 +24,11 @@ function sessionInfo() {
 
 	});
 };
+
+$('.header-user-logout').click(function() {
+	
+	if(confirm("로그아웃 하시겠습니까?")) {
+		location.href="/user/logout";
+	}
+	
+});
