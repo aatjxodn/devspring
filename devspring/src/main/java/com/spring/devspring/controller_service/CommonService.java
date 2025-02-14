@@ -28,9 +28,9 @@ public class CommonService {
 	private final CommonMapper CommonMapper;
 
 	// lnb 조회
-	public List<LnbDTO> getLnbList() {
+	public List<LnbDTO> getLnbList(String userAuthority) {
 		try {
-			return this.CommonMapper.selectLnbList();
+			return this.CommonMapper.selectLnbList(userAuthority);
 		} catch (Exception e) {
 			throw new CustomException(ErrorCode.INTERNAL_SERVER_ERROR);
 		}

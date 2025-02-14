@@ -16,42 +16,48 @@ html, body {
 }
 
 /* --------------------- header --------------------- */
-#header {
-	width: 100%;
+.header {
+	width: calc(100vw - 200px);
 	height: 80px;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
 	border-bottom: 1px solid #aaaaaa;
-	z-index: 1001;
-	background-color: #fff;
-	position: fixed;
+	z-index: 100;
+	background-color: red;
 }
 
-/* --------------------- header icon --------------------- */
-.header_icon {
-	
+/* --------------------- header title --------------------- */
+.header-title {
+	margin-left: 50px;
 }
-.header_icon span {
-	font-size: 2rem;
+.header-title span {
+	font-size: 1.8rem;
 	font-weight: bold;
 }
 
 /* --------------------- header-user --------------------- */
 .header-user {
-	
+	margin-right: 20px;
 }
-.user-lnb {
+.header-user-lnb {
 	display: flex;
+	align-items: center;
 }
-.user-lnb li {
-	margin: 0 10px;
+.header-user-lnb li:nth-child(3) {
+	margin-left: 20px;
 }
+.header-user-lnb li {
+	font-size: 1.2rem;
+	font-weight: bold;
+	margin: 0 3px;
+}
+
 /* --------------------- header hamberger button --------------------- */
-.header_hamburger {
+.header-hamburger {
 	display: none;
 }
-.header_hamburger span {
+.header-hamburger span {
 	font-size: 1.2rem;
 	font-weight: bold;
 	cursor: pointer;
@@ -103,11 +109,7 @@ html, body {
 	#header {
 		justify-content: space-between;
 	}
-	.header_icon span {
-		font-size: 1.5rem;
-		margin-left: 30px;
-	}
-	.header_hamburger span {
+	.header-hamburger span {
 		font-size: 1.5rem;
 	}
 	.lnb {
@@ -116,7 +118,7 @@ html, body {
 	.language {
 		display: none;
 	}
-	.header_hamburger {
+	.header-hamburger {
 		display: block;
 	}
 }
@@ -125,11 +127,7 @@ html, body {
 	#header {
 		justify-content: space-between;
 	}
-	.header_icon span {
-		font-size: 1.5rem;
-		margin-left: 30px;
-	}
-	.header_hamburger span {
+	.header-hamburger span {
 		font-size: 1.5rem;
 	}
 	.lnb {
@@ -138,7 +136,7 @@ html, body {
 	.language {
 		display: none;
 	}
-	.header_hamburger {
+	.header-hamburger {
 		display: block;
 	}
 }
@@ -147,11 +145,7 @@ html, body {
 	#header {
 		justify-content: space-between;
 	}
-	.header_icon span {
-		font-size: 1.5rem;
-		margin-left: 30px;
-	}
-	.header_hamburger span {
+	.header-hamburger span {
 		font-size: 1.5rem;
 	}
 	.lnb {
@@ -160,7 +154,7 @@ html, body {
 	.language {
 		display: none;
 	}
-	.header_hamburger {
+	.header-hamburger {
 		display: block;
 	}
 }

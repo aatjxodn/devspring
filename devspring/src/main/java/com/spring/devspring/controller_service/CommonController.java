@@ -23,10 +23,10 @@ public class CommonController {
 	private final CommonService commonService;
 	
 	// lnb 조회
-	@GetMapping("/lnb")
+	@GetMapping("/lnb/{userAuthority}")
 	@ResponseBody
-	public List<LnbDTO> getLnbList() {
-		return this.commonService.getLnbList();
+	public List<LnbDTO> getLnbList(@PathVariable("userAuthority") String userAuthority) {
+		return this.commonService.getLnbList(userAuthority);
 	}
 	
 	// lnb Sub 조회

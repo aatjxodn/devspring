@@ -3,23 +3,25 @@
 
     <div th:fragment="header">
     
-        <div id="header">
+        <div class="header">
         
         	<!-- header 아이콘 -->
-        	<div class="header_icon">
-        		<span>Spring</span>
+        	<div class="header-title">
+        		<span>Dash Board</span>
         	</div>
         	
         	<!-- header 상단바 -->
         	<div class="header-user">
-        		<ul class="user-lnb">
-        			<li>사용자</li>
-        			<li>로그아웃</li>
+        		<ul class="header-user-lnb">
+        			<li><img th:src="@{/images/admin/login.png}" alt="login image"></li>
+        			<li>user</li>
+        			<li><img th:src="@{/images/admin/logout.png}" alt="logout image"></li>
+        			<li>logout</li>
         		</ul>
         	</div>
         	
         	<!-- header 햄버거바 -->
-        	<div class="header_hamburger">
+        	<div class="header-hamburger">
         		<span>☰</span>
         	</div>
         	
@@ -31,9 +33,6 @@
         	</div>
         	
         </div>
-        
-        <!-- header fixed를 고정시키려고 만든 임의 div -->
-        <div style="height: 80px;"></div>
         
         <!-- common js -->
 		<script type="text/javascript" th:src="@{/js/common/admin/fragments/header.js}"></script>

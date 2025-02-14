@@ -14,12 +14,13 @@ $(window).on('resize', function() {
 
 // 현재 URL
 var currentPath = window.location.pathname;
+var userAuthority = 'USER';
 
 // lnb 설정
 function setLnb() {
 	
 	$.ajax({
-	    url: 'common/lnb',
+	    url: 'common/lnb/' + userAuthority,
 	    method: 'GET',
 		dataType: 'json',
 	    success: function (data) {
@@ -199,7 +200,7 @@ function setLnb() {
 // 모바일 lnb 설정
 function setLnbMob() {
     $.ajax({
-        url: 'common/lnb',
+        url: 'common/lnb/' + userAuthority,
         method: 'GET',
         dataType: 'json',
         success: function (data) {

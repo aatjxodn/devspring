@@ -9,7 +9,7 @@ import com.spring.devspring.dto.LnbSubDTO;
 public interface CommonMapper {
 
 	// lnb 조회
-	List<LnbDTO> selectLnbList();
+	List<LnbDTO> selectLnbList(String userAuthority);
 	// lnb Sub 조회
 	List<LnbSubDTO> selectLnbSubList(String id);
 

@@ -15,20 +15,21 @@
     
     <!-- reset css -->
 	<link th:href="@{/css/common/admin/fragments/reset.css}" rel="stylesheet">
-	<!-- header css -->
-	<link th:href="@{/css/common/admin/fragments/header.css}" rel="stylesheet">
 	<!-- menu css -->
 	<link th:href="@{/css/common/admin/fragments/menu.css}" rel="stylesheet">
+	<!-- header css -->
+	<link th:href="@{/css/common/admin/fragments/header.css}" rel="stylesheet">
 	
 	<!-- admin main css -->
 </head>
 <body>
-
-    <div th:replace="common/admin/fragments/header::header"></div>
-    
-    <div th:replace="common/admin/fragments/menu::menu"></div>
-
-    <div layout:fragment="content" class="content"></div>
-
+	
+	<div style="display: flex;">
+		<div th:replace="common/admin/fragments/menu::menu" class="menu"></div> <!-- 메뉴 -->
+		<div style="display: flex; flex-direction: column;">
+			<div th:replace="common/admin/fragments/header::header"></div> <!-- header -->
+	        <div layout:fragment="content" class="content"></div> <!-- 콘텐츠 -->
+	    </div>
+	</div>
 </body>
 </html>

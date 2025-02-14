@@ -1,52 +1,70 @@
-/* --------------------- footer --------------------- */
-#footer {
-	width: 100%;
-	height: 160px;
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	background-color: #000;
+/* --------------------- menu --------------------- */
+.menu {
+	width: 200px;
+	height: 100vh;
+	background-color: red;
 }
-#footer div span {
-	font-size: 2rem;
+
+/* --------------------- menu title --------------------- */
+.menu-title {
+	height: 80px;
+	line-height: 80px;
+	text-align: center;
+	border-bottom: 1px solid #aaaaaa;
+}
+.menu-title span {
+	font-size: 1.3rem;
 	font-weight: bold;
-	color: #fff;
-	opacity: 0.8;
+	background-color: red;
+	overflow: visible;
 }
-#footer div div {
-	font-size: 1rem;
-	color: #fff;
-	opacity: 0.5;
+
+/* --------------------- menu lnb --------------------- */
+.menu-lnb {
+	width: 100%;
+	text-align: center;
+	z-index: 99;
 }
+.menu-lnbUl {
+	position: relative;
+}
+.menu-lnbUl li {
+    border-bottom: 1px solid #aaaaaa;
+    background-color: red;
+    padding: 20px 0;
+}
+.menu-lnbUl li a {
+	font-size: 1.2rem;
+	font-weight: bold;
+	cursor: pointer;
+	color: #333333;
+}
+.menu-lnbUl li ul {
+	display: none;
+}
+.menu-lnbUl li ul li {
+	border-bottom: none;
+	background-color: transparent;
+	padding: 30px 0 0 0;
+}
+.menu-lnbUl li ul li a {
+	font-size: 1.2rem;
+	font-weight: bold;
+	color: #666666;
+	cursor: pointer;
+}
+
 
 
 /* --------------------- 반응형 --------------------- */
 /* Extra small (모바일 - 작은 화면) */
 @media (max-width: 575px) {
-	#footer div span {
-		font-size: 1.5rem;
-	}
-	#footer div div {
-		font-size: 0.7rem;
-	}
 }
 /* Small (모바일 - 일반 크기) */
 @media (min-width: 576px) and (max-width: 767px) {
-	#footer div span {
-		font-size: 1.5rem;
-	}
-	#footer div div {
-		font-size: 0.8rem;
-	}
 }
 /* Medium (태블릿) */
 @media (min-width: 768px) and (max-width: 991px) {
-	#footer div span {
-		font-size: 1.5rem;
-	}
-	#footer div div {
-		font-size: 0.8rem;
-	}
 }
 /* Large (작은 데스크탑) */
 @media (min-width: 992px) and (max-width: 1199px) {

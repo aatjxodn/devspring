@@ -15,6 +15,7 @@
         	CT_LNB_USE_YN AS ctLnbUseYn
         FROM CT_LNB
         WHERE CT_LNB_USE_YN = 'Y'
+        AND CT_LNB_AUTHORITY = #{userAuthority}
         ORDER BY CT_LNB_IDX
     </select>
     
