@@ -1,7 +1,7 @@
 @charset "UTF-8";
 
 /* --------------------- email title --------------------- */
-#email-title {
+.email-title {
 	width: 100%;
 	position: relative;
 }
@@ -34,64 +34,67 @@
 }
 
 /* --------------------- email sub title --------------------- */
-#email-sub-title {
+.email-title-sub {
 	width: 100%;
 	text-align: center;
 	margin: 50px auto 0 auto;
 }
-#email-sub-title h2 {
+.email-title-sub h2 {
 	font-size: 3rem;
 	font-weight: bold;
 	color: #333333;
 	margin-bottom: 20px;
 }
-#email-sub-title span {
+.email-title-sub span {
 	font-size: 1.4rem;
 	opacity: 0.6;
 }
 
 /* --------------------- email table form --------------------- */
-#email-form {
+.email-form {
 	width: 100%;
 	margin: 50px auto 50px auto;
 	text-align: center;
 }
-#email-form table {
+.email-form table {
 	width: 70%;
 	margin: 0 auto;
 }
-#email-form table tr:first-child {
+.email-form table tr:first-child {
 	border-top: 1px solid #999999;
 }
-#email-form table tr {
+.email-form table tr {
 	border-top: 1px solid #dddddd;
 	height: 80px;
 	line-height: 80px;
 }
-#email-form table tr th {
+.email-form table tr th {
 	border-right: 1px solid #dddddd;
 	background-color: #f6f6f6;
 	font-weight: bold;
+	font-size: 1.2rem;
 }
-#email-form table tr th span {
+.email-form table tr th span {
 	color: red;
 }
-#email-form table tr td input {
+.email-form table tr td input {
 	outline: none;
     display: block;
 	margin: 0 0 0 20px;
-	padding: 15px 150px 15px 15px;
+	padding: 15px 200px 15px 15px;
 	border: 1px solid #dddddd;
-	color: #999999;
+	color: #666666;
+	font-size: 1.2rem;
 }
-#email-form table tr td textarea {
+.email-form table tr td textarea {
 	outline: none;
 	width: 100%;
 	height: 300px;
 	border: 1px solid #dddddd;
 	margin-top: 20px;
 	padding: 10px;
-	color: #000;
+	color: #666666;
+	font-size: 1.2rem;
 }
 .emailBut {
 	border: 1px solid #26456d;
@@ -101,6 +104,7 @@
 	font-weight: bold;
 	cursor: pointer;
 	border-radius: 5px;
+	font-size: 1.2rem;
 }
 
 
@@ -116,20 +120,20 @@
 	.email-title-image img {
 		height: 200px;
 	}
-	#email-sub-title h2 {
+	.email-title-sub h2 {
 		font-size: 2rem;
 	}
-	#email-sub-title span {
+	.email-title-sub span {
 		font-size: 1.2rem;
 	}
-	#email-form {
+	.email-form {
 		width: 90%;
 	}
-	#email-form table tr th {
+	.email-form table tr th {
 		min-width: 100px;
 		font-size: 0.8rem;
 	}
-	#email-form table tr td input {
+	.email-form table tr td input {
 		font-size: 0.8rem;
 		width: 250px;
 	}

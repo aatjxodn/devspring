@@ -3,7 +3,7 @@
 
     <div layout:fragment="content">
     
-    	<div id="email-title">
+    	<div class="email-title">
     		<div class="email-title-image">
     			<img th:src="@{/images/user/email.png}" alt="contact image">
     		</div>
@@ -13,12 +13,12 @@
     		</div>
     	</div>
     	
-    	<div id="email-sub-title">
+    	<div class="email-title-sub">
     		<h2>E-Mail</h2>
     		<span>If you have any inquiries, please email us.</span>
     	</div>
     	
-    	<div id="email-form">
+    	<div class="email-form">
     		<table>
     			<colgroup>
 				    <col style="width: 15%;">
@@ -27,15 +27,15 @@
     			<tbody>
     				<tr>
     					<th>name<span>*</span></th>
-    					<td><input type="text" class="name"></td>
+    					<td><input type="text" class="name" placeholder="Please enter your name"></td>
     				</tr>
     				<tr>
     					<th>subject<span>*</span></th>
-    					<td><input type="text" class="subject"></td>
+    					<td><input type="text" class="subject" placeholder="Please enter your subject"></td>
     				</tr>
     				<tr>
     					<th>e-mail<span>*</span></th>
-    					<td><input type="text" class="email"></td>
+    					<td><input type="text" class="email" placeholder="Please enter your email"></td>
     				</tr>
     				<tr>
     					<td colspan="2"><textarea id="content" placeholder="Please write your inquiry"></textarea></td>
