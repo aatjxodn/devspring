@@ -107,14 +107,14 @@ public class CtUserService implements UserDetailsService {
 		CtUserDTO ctUser = this.ctUserMapper.findByCtUserIdAndCtUserPwd(ctUserDto.getCtUserId(), ctUserDto.getCtUserPwd());
 		
 		if (ctUser == null) {
-			throw new CustomException(ErrorCode.INVALID_REQUEST);
+			throw new CustomException("[비밀번호 변경 - 사용자를 찾을 수 없습니다.]", ErrorCode.Internal_Server_Error);
 		}
 		
 		try {
 			ctUser.setCtUserPwd(ctUserDto.getCtUserPwdNewConfirm());
 			this.ctUserMapper.updatePassword(ctUserDto);
 		} catch (Exception e) {
-			throw new CustomException(ErrorCode.INVALID_REQUEST);
+			throw new CustomException("[비밀번호 변경 - 변경에 실패했습니다.]", ErrorCode.Internal_Server_Error);
 		}
 	}
 

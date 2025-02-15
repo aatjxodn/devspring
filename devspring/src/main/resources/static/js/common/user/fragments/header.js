@@ -96,8 +96,13 @@ function setLnb() {
 							});
 							
 						},
-						error: function(request, status, error){
-							alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+						error: function(jqXHR) {
+							if (jqXHR.responseJSON) {
+								alert(jqXHR.responseJSON.error + " : " + jqXHR.responseJSON.status + ", " + jqXHR.responseJSON.message);
+								console.log(jqXHR.responseJSON);
+							} else {
+								alert("에러 메세지를 찾을 수 없습니다.");
+							}
 						}
 					});
 				}
@@ -105,8 +110,13 @@ function setLnb() {
 	        });
 			
 	    },
-		error: function(request, status, error){
-			alert("code:"+request.status+"\n"+"message:"+request.responseText+"\n"+"error:"+error);
+		error: function(jqXHR) {
+			if (jqXHR.responseJSON) {
+				alert(jqXHR.responseJSON.error + " : " + jqXHR.responseJSON.status + ", " + jqXHR.responseJSON.message);
+				console.log(jqXHR.responseJSON);
+			} else {
+				alert("에러 메세지를 찾을 수 없습니다.");
+			}
 		}
 	});
 }
@@ -246,9 +256,14 @@ function setLnbMob() {
 
                             lnbLi.append(subUl); // 서브 메뉴 추가
                         },
-                        error: function (request, status, error) {
-                            alert("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);
-                        }
+						error: function(jqXHR) {
+							if (jqXHR.responseJSON) {
+								alert(jqXHR.responseJSON.error + " : " + jqXHR.responseJSON.status + ", " + jqXHR.responseJSON.message);
+								console.log(jqXHR.responseJSON);
+							} else {
+								alert("에러 메세지를 찾을 수 없습니다.");
+							}
+						}
                     });
                 }
 
@@ -269,9 +284,14 @@ function setLnbMob() {
                 }
             });
         },
-        error: function (request, status, error) {
-            alert("code:" + request.status + "\n" + "message:" + request.responseText + "\n" + "error:" + error);
-        }
+		error: function(jqXHR) {
+			if (jqXHR.responseJSON) {
+				alert(jqXHR.responseJSON.error + " : " + jqXHR.responseJSON.status + ", " + jqXHR.responseJSON.message);
+				console.log(jqXHR.responseJSON);
+			} else {
+				alert("에러 메세지를 찾을 수 없습니다.");
+			}
+		}
     });
 }
 

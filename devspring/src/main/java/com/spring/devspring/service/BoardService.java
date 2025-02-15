@@ -33,7 +33,7 @@ public class BoardService {
 	            nowPage = Integer.parseInt(dd); // 문자열을 정수로 변환
 	        }
 	    } catch (NumberFormatException e) {
-	    	throw new CustomException(ErrorCode.INVALID_REQUEST);
+	    	throw new CustomException("[boards 조회 error 발생]", ErrorCode.Internal_Server_Error);
 	    }
 	    
 	    int selectBoardListTotal = this.BoardMapper.selectBoardListTotal();

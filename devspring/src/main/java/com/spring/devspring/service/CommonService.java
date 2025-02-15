@@ -25,7 +25,7 @@ public class CommonService {
 		try {
 			return this.CommonMapper.selectLnbList(userAuthority);
 		} catch (Exception e) {
-			throw new CustomException(ErrorCode.INTERNAL_SERVER_ERROR);
+			throw new CustomException("[Lnb 조회 error 발생]", ErrorCode.Internal_Server_Error);
 		}
 	}
 	
@@ -34,7 +34,7 @@ public class CommonService {
 		try {
 			return this.CommonMapper.selectLnbSubList(id);
 		} catch (Exception e) {
-			throw new CustomException(ErrorCode.INTERNAL_SERVER_ERROR);
+			throw new CustomException("[Lnb Sub 조회 error 발생]", ErrorCode.Internal_Server_Error);
 		}
 	}
 

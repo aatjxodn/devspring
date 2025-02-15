@@ -1,17 +1,14 @@
 package com.spring.devspring.exception;
 
+import lombok.Getter;
+
+@Getter
 public class CustomException extends RuntimeException {
 	
-	private static final long serialVersionUID = 1440328210932079933L;
-	
-	private final ErrorCode errorCode;
+	private ErrorCode errorCode;
 
-    public CustomException(ErrorCode errorCode) {
-        super(errorCode.getMessage());
+    public CustomException(String msg, ErrorCode errorCode){
+        super(msg);
         this.errorCode = errorCode;
-    }
-
-    public ErrorCode getErrorCode() {
-        return errorCode;
     }
 }

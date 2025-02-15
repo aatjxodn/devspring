@@ -46,7 +46,7 @@ public class EmailService {
             this.mailSender.send(message);
             
     	} catch (Exception e) {
-            throw new CustomException(ErrorCode.INTERNAL_SERVER_ERROR);
+    		throw new CustomException("[이메일 전송 error 발생]", ErrorCode.Internal_Server_Error);
     	}
     }
 }
