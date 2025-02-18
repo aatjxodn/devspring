@@ -37,7 +37,7 @@ public class SecurityConfig {
         		.loginPage("/admin")
         		.usernameParameter("ctUserId")
         		.passwordParameter("ctUserPwd")
-                .loginProcessingUrl("/user/loginProcess")
+                .loginProcessingUrl("/user/login")
                 .defaultSuccessUrl("/adminMain")
                 .successHandler(customLoginSuccessHandler)
                 .failureHandler(customLoginFailHandler)
@@ -54,7 +54,7 @@ public class SecurityConfig {
         
 	     // http request 인증 설정
 	    http.authorizeHttpRequests(authorize -> authorize
-	            .requestMatchers("/adminMain").authenticated()
+	            .requestMatchers("/adminMain","/adminTest").authenticated()
 	            .requestMatchers("/css/**", "/js/**", "/images/**","/mapper/**").permitAll()
 	            .anyRequest().permitAll()
 	    );
@@ -67,7 +67,7 @@ public class SecurityConfig {
         // 세션 관리 설정 (세션 타임아웃 30분)
         http.sessionManagement(session -> session
                 .sessionFixation().none()
-                .invalidSessionUrl("/login?sessionExpired=true") // 세션 만료 시 리디렉션
+                .invalidSessionUrl("/admin") // 세션 만료 시 리디렉션
                 .maximumSessions(1) // 동시에 하나의 세션만 허용
                 .maxSessionsPreventsLogin(false) // 기존 세션 종료 후 새 로그인 허용
         );

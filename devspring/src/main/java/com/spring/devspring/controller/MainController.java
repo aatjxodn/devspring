@@ -13,64 +13,81 @@ public class MainController {
 	
 	// root
 	@GetMapping("/")
-	public String Main() {
+	public String main() {
 		return "view/user/main/main";
 	}
 	// Information about us
 	@GetMapping("/about")
-	public String About() {
+	public String about() {
 		return "view/user/sub/about";
 	}
 	// Service service1
 	@GetMapping("/service1")
-	public String Service1() {
+	public String service1() {
 		return "view/user/sub/service1";
 	}
 	// Service service2
 	@GetMapping("/service2")
-	public String Service2() {
+	public String service2() {
 		return "view/user/sub/service2";
 	}
 	// Service service3
 	@GetMapping("/service3")
-	public String Service3() {
+	public String service3() {
 		return "view/user/sub/service3";
 	}
 	// Service service4
 	@GetMapping("/service4")
-	public String Service4() {
+	public String service4() {
 		return "view/user/sub/service4";
 	}
 	// Contact mail
 	@GetMapping("/email")
-	public String Email() {
+	public String email() {
 		return "view/user/sub/email";
 	}
 	// Contact contact
 	@GetMapping("/location")
-	public String Location(ModelMap model) {
+	public String location(ModelMap model) {
 		model.addAttribute("KakaoAppKey", this.kakaoApiKey);
 		return "view/user/sub/location";
 	}
-	// test board
-	@GetMapping("/board")
-	public String Board() {
-		return "view/user/sub/board";
-	}
+	
+	
+	// admin -----------------------------------------------------------------------------------------------------------------
 	// Admin
 	@GetMapping("/admin")
-	public String Admin() {
+	public String admin() {
 		return "view/admin/main/login";
 	}
 	// Admin Main
 	@GetMapping("/adminMain")
-	public String AdminMain() {
+	public String adminMain() {
 		return "view/admin/main/admin";
 	}
 	// Admin Main
 	@GetMapping("/userList")
 	public String adminNew() {
 		return "view/admin/sub/userList";
+	}
+	// Admin Notice
+	@GetMapping("/notice")
+	public String adminNotice() {
+		return "view/admin/sub/notice";
+	}
+	
+	
+	
+	// test -----------------------------------------------------------------------------------------------------------------
+	// test board
+	@GetMapping("/board")
+	public String board() {
+		return "view/user/sub/board";
+	}
+	// test
+	@GetMapping("/adminTest")
+	public String adminTest() {
+		return "view/admin/sub/test";
 	}
 
 }

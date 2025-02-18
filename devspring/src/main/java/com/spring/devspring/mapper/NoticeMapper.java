@@ -7,7 +7,7 @@ import org.apache.ibatis.annotations.Param;
 import com.spring.devspring.dto.BoardDTO;
 
 @Mapper
-public interface BoardMapper {
+public interface NoticeMapper {
 	
 	// board 조회
 	List<BoardDTO> selectBoardList(@Param("begin") int begin,@Param("end") int end);

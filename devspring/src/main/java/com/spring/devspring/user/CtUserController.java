@@ -28,14 +28,14 @@ public class CtUserController {
     private final PasswordEncoder passwordEncoder;
     
     // 사용자 - 세션 확인
-    @GetMapping(value="/session")
+    @GetMapping(value="/userSession")
     @ResponseBody
     public HashMap<String, String> getSessionInfo(Principal principal, HttpServletRequest request) {
         return this.djsUserService.getSessionInfo(principal, request);
     }
 
     // 사용자 - 회원가입
-    @PostMapping(value="/signup")
+    @PostMapping(value="/signUp")
     @ResponseBody
     public void getInsertUser(@RequestBody(required = false) CtUserParaDTO ctUserParaDto){
         CtUserDTO user = CtUserDTO.createUser(ctUserParaDto, passwordEncoder);

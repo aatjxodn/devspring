@@ -2,7 +2,8 @@
 .menu {
 	width: 200px;
 	height: 100vh;
-	background-color: red;
+	background-color: rgb(63,84,115);
+	box-shadow: 0 20px 30px rgba(0, 0, 0, 0.19), 0 10px 20px rgba(0, 0, 0, 0.23);
 }
 
 /* --------------------- menu title --------------------- */
@@ -10,12 +11,12 @@
 	height: 80px;
 	line-height: 80px;
 	text-align: center;
-	border-bottom: 1px solid #aaaaaa;
+	border-bottom: 1px solid rgb(0,71,178);
 }
 .menu-title span {
 	font-size: 1.3rem;
 	font-weight: bold;
-	background-color: red;
+	color: #fff;
 	overflow: visible;
 }
 
@@ -30,14 +31,13 @@
 }
 .menu-lnbUl li {
     border-bottom: 1px solid #aaaaaa;
-    background-color: red;
     padding: 20px 0;
 }
 .menu-lnbUl li a {
 	font-size: 1.2rem;
 	font-weight: bold;
 	cursor: pointer;
-	color: #333333;
+	color: #fff;
 }
 .menu-lnbUl li ul {
 	display: none;

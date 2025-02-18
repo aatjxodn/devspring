@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE mapper
+  PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN"
+  "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.spring.devspring.mapper.NoticeFileMapper">
+
+	<insert id="save" parameterType="com.spring.devspring.dto.NoticeFileDTO">
+		INSERT INTO CT_NOTICE_FILE(CT_NOTICE_FILE_ORIGINAL_NAME, CT_NOTICE_FILE_SAVED_NAME, CT_NOTICE_FILE_SAVED_PATH)
+		VALUES(#{orgNm},#{savedNm},#{savedPath})
+	</insert>
+
+    
+</mapper>

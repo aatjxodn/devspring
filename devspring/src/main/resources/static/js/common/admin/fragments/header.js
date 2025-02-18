@@ -8,7 +8,7 @@ $(document).ready(function() {
 function sessionInfo() {
 
 	$.ajax({
-		url: '/user/session',
+		url: '/user/userSession',
 		method: 'GET',
 		dataType: 'json',
 		success: function(data) {
