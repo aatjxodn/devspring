@@ -29,15 +29,28 @@ function fileCheck(e) {
     	 fileCount = fileCount + filesArr.length;
     }
 	
-	filesArr.forEach(function (f) {
+/*	filesArr.forEach(function (f) {
 		content_files.forEach(function (c) {
 			if(f.name == c.name && c.is_delete != true) {
 				alert('동일한 파일이 존재합니다.');
 				fileCount = fileCount - filesArr.length;
 				filesArr = [];
+				return;
 			}
 			return;
 		});
+	});*/
+	
+	filesArr.some(function (f) {
+	    return content_files.some(function (c) {
+	        if (f.name === c.name && c.is_delete !== true) {
+	            alert('동일한 파일이 존재합니다.');
+	            fileCount -= filesArr.length;
+	            filesArr = [];
+	            return true;  // 내부 some() 루프 종료
+	        }
+	        return false;
+	    });
 	});
     
 	// 각각의 파일 배열담기 및 기타
