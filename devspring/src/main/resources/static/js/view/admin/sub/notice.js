@@ -1,109 +1,134 @@
 // DOM이 로드된 후
 $(document).ready(function() {
-	$("#input_file").on("change", fileCheck);
+	// 검색 
+	setNoticeSearchCondition();
+	// list
+	noticeList();
+	
+	$('.header-title span').text('Notice');
 });
 
-$('#btn-upload').click(function (e) {
-    e.preventDefault();
-    $('#input_file').click();
-});
-
-// 파일 현재 필드 숫자 totalCount랑 비교값
-var fileCount = 0;
-// 해당 숫자를 수정하여 전체 업로드 갯수를 정한다.
-var totalCount = 5;
-// 파일 고유넘버
-var fileNum = 0;
-// 첨부파일 배열
-var content_files = new Array();
-
-function fileCheck(e) {
-    var files = e.target.files;
-    // 파일 배열 담기
-    var filesArr = Array.prototype.slice.call(files);
-    // 파일 개수 확인 및 제한
-    if (fileCount + filesArr.length > totalCount) {
-      alert('파일은 최대 '+totalCount+'개까지 업로드 할 수 있습니다.');
-      return;
-    } else {
-    	 fileCount = fileCount + filesArr.length;
-    }
+// notice search condition
+function setNoticeSearchCondition() {
 	
-/*	filesArr.forEach(function (f) {
-		content_files.forEach(function (c) {
-			if(f.name == c.name && c.is_delete != true) {
-				alert('동일한 파일이 존재합니다.');
-				fileCount = fileCount - filesArr.length;
-				filesArr = [];
-				return;
-			}
-			return;
-		});
-	});*/
+	$("#notice-filter").select2({
+        placeholder: "제목",  // placeholder 텍스트
+        allowClear: true,  // X 버튼(선택 해제) 비활성화
+        width: '100'  // 너비 설정
+    });
 	
-	filesArr.some(function (f) {
-	    return content_files.some(function (c) {
-	        if (f.name === c.name && c.is_delete !== true) {
-	            alert('동일한 파일이 존재합니다.');
-	            fileCount -= filesArr.length;
-	            filesArr = [];
-	            return true;  // 내부 some() 루프 종료
-	        }
-	        return false;
-	    });
+	let comboData = [
+		{ id: "subject", text: "제목" },
+		{ id: "content", text: "내용" },
+		{ id: "Author", text: "작성자" }
+	];
+
+	// 빈값을 유지하면서 데이터 추가
+	$("#notice-filter").empty().append('<option value="">선택하세요</option>'); // 기본 선택값
+	
+	comboData.forEach(item => {
+		let option = new Option(item.text, item.id, false, false);
+		$("#notice-filter").append(option);
 	});
-    
-	// 각각의 파일 배열담기 및 기타
-	filesArr.forEach(function(f) {
-		var reader = new FileReader();
-		reader.onload = function(e) {
-			content_files.push(f);
-			$('#articlefileChange').append(
-				'<div id="file' + fileNum + '">'
-				+ '<span>' + f.name + '</span>'
-				+ '<span onclick="fileDelete(\'file' + fileNum + '\')">X</span>'
-				+ '<div/>'
-			);
-			fileNum++;
-		};
-		reader.readAsDataURL(f);
-	});
-	console.log(content_files);
-	//초기화 한다.
-	$("#input_file").val("");
+
+	// 새롭게 갱신
+	$("#notice-filter").trigger("change");
 }
 
-// 파일 부분 삭제 함수
-function fileDelete(fileNum){
-    var no = fileNum.replace(/[^0-9]/g, "");
-    content_files[no].is_delete = true;
-	$('#' + fileNum).remove();
-	fileCount --;
-    console.log(content_files);
-}
 
-// 로그인 버튼 클릭 시
-$('.butCl').click(function() {
-	var formData = new FormData();
-	for (var x = 0; x < content_files.length; x++) {
-		// 삭제 안한것만 담아 준다. 
-		if (!content_files[x].is_delete) {
-			formData.append("files", content_files[x]);
-		}
+function noticeList(i) {
+	
+	if (i == null || i== undefined || i == '') {
+		i = 1;
 	}
 	
+	var params = {
+		"nowPage" : i
+	};
+	
 	$.ajax({
-		type: "POST",
-		enctype: "multipart/form-data",
-		url: "/notice/fileUpload",
-		data: formData,
-		processData: false,
-		contentType: false,
-		success: function(data) {
-			alert("파일업로드 성공");
-		},
-		error: function(xhr, status, error) {
-			alert("서버오류로 지연되고있습니다. 잠시 후 다시 시도해주시기 바랍니다.");
-		}
-	});
-});
+		    url: '/notice/notices',
+		    method: 'GET',
+			data: params,
+			dataType: 'json',
+			contentType: 'application/json',
+		    success: function (data) {
+				
+		        var noticeList = data.noticeList;
+				var page = data.noticePage;
+				
+		        var noticeTbody = $('.notice-list-table tbody');
+				var noticePaging = $('.notice-paging');
+				
+				noticeTbody.empty();
+				noticePaging.empty();
+
+				$.each(noticeList, function(index, item) {
+				    var noticeTbodyTr = $('<tr></tr>');
+
+				    noticeTbodyTr.append('<td style="width: 100px;">' + item.ctNoticeIdx + '</td>');
+				    noticeTbodyTr.append('<td style="max-width: 500px; overflow: hidden; text-overflow: ellipsis; white-space: nowrap; text-align: left;">' + item.ctNoticeSubject + '</td>');
+				    noticeTbodyTr.append('<td style="width: 200px;">' + item.ctNoticeAuthor + '</td>');
+				    noticeTbodyTr.append('<td style="width: 200px;">' + item.ctNoticeModifier + '</td>');
+				    noticeTbodyTr.append('<td style="width: 250px;">' + item.ctNoticeCreateTime + '</td>');
+				    noticeTbodyTr.append('<td style="width: 250px;">' + item.ctNoticeUpdateTime + '</td>');
+
+				    noticeTbody.append(noticeTbodyTr);
+					
+					noticeTbodyTr.dblclick(function() {
+						location.href='/notice/details/' + item.ctNoticeIdx;
+					});
+				});
+				
+				
+				// 1번 이동
+				var noticePagingFirst = $('<li></li>');
+				if (page.nowPage == 1) {
+					noticePagingFirst.append('<a ><<</a>');
+				} else {
+					noticePagingFirst.append('<a style="cursor:pointer;"><<</a>').attr('onclick', 'noticeList(1)');
+				}
+				noticePaging.append(noticePagingFirst);
+				
+				// 이전 이동
+				var noticePagingPrev = $('<li></li>');
+				noticePagingPrev.append('<a style="cursor:pointer;"><</a>').attr('onclick', 'noticeList('+ (page.beginPage-1) +')');
+				noticePaging.append(noticePagingPrev);
+				
+				// 번호 이동
+				for (var pageNo=page.beginPage; pageNo <= page.endPage; pageNo++) {
+					var noticePagingNumber = $('<li></li>');
+					if (i == pageNo) {
+						noticePagingNumber.append('<a style="background-color:#384246; color:#fff; border:1px solid #384246;">' + pageNo +'</a>');
+					} else {
+						noticePagingNumber.append('<a style="cursor:pointer;">' + pageNo +'</a>').attr('onclick', 'noticeList('+ pageNo +')');
+					}
+					noticePaging.append(noticePagingNumber);
+		        }
+				
+				// 다음 이동
+				var noticePagingNext = $('<li></li>');
+				noticePagingNext.append('<a style="cursor:pointer;">></a>').attr('onclick', 'noticeList('+ (page.endPage+1) +')');
+				noticePaging.append(noticePagingNext);
+				
+				// 마지막 이동
+				var noticePagingLast = $('<li></li>');
+				if (page.nowPage == page.totalPage) {
+					noticePagingLast.append('<a >>></a>');
+				} else {
+					noticePagingLast.append('<a style="cursor:pointer;">>></a>').attr('onclick', 'noticeList('+ page.totalPage +')');
+				}
+				noticePaging.append(noticePagingLast);
+
+		    },
+			error: function(jqXHR) {
+				if (jqXHR.responseJSON) {
+					alert(jqXHR.responseJSON.error + " : " + jqXHR.responseJSON.status + ", " + jqXHR.responseJSON.message);
+					console.log(jqXHR.responseJSON);
+				} else {
+					alert("에러 메세지를 찾을 수 없습니다.");
+				}
+			}
+	  });
+}
+

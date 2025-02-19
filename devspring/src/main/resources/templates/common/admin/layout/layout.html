@@ -8,11 +8,9 @@
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <!-- jQuery CDN -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
-    <!-- slick CDN -->
-    <script src="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"></script>
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
-    <link rel="stylesheet" href="//cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick-theme.css" />
-    
+    <!-- select2 CDN -->
+	<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/css/select2.min.css" rel="stylesheet" />    
+	
     <!-- reset css -->
 	<link th:href="@{/css/common/admin/fragments/reset.css}" rel="stylesheet">
 	<!-- menu css -->
@@ -21,13 +19,14 @@
 	<link th:href="@{/css/common/admin/fragments/header.css}" rel="stylesheet">
 	
 	<!-- admin main css -->
+	<link th:href="@{/css/view/admin/sub/notice.css}" rel="stylesheet">
 </head>
 <body>
 	
 	<div style="display: flex;">
-		<div th:replace="common/admin/fragments/menu::menu" class="menu"></div> <!-- 메뉴 -->
+		<div th:replace="~{common/admin/fragments/menu::menu}" class="menu"></div> <!-- 메뉴 -->
 		<div style="display: flex; flex-direction: column;">
-			<div th:replace="common/admin/fragments/header::header"></div> <!-- header -->
+			<div th:replace="~{common/admin/fragments/header::header}"></div>
 	        <div layout:fragment="content" class="content"></div> <!-- 콘텐츠 -->
 	    </div>
 	</div>

@@ -4,14 +4,16 @@ import java.util.List;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 
-import com.spring.devspring.dto.BoardDTO;
+import com.spring.devspring.dto.NoticeDTO;
 
 @Mapper
 public interface NoticeMapper {
 	
-	// board 조회
-	List<BoardDTO> selectBoardList(@Param("begin") int begin,@Param("end") int end);
-	// board count 조회
-	int selectBoardListTotal();
+	// notices 조회
+	List<NoticeDTO> findAll(@Param("begin") int begin,@Param("end") int end);
+	// notice count 조회
+	int count();
+	// notice 조회
+	NoticeDTO findByCtNoticeIdx(int ctNoticeIdx);
 
 }

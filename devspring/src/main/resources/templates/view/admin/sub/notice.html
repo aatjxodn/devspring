@@ -4,20 +4,60 @@
 	layout:decorate="~{common/admin/layout/layout}">
 
 	<div layout:fragment="content">
-	
-		<div class="container">
-			<button id="btn-upload" type="button" style="border: 1px solid #ddd; outline: none;">파일 추가</button>
-			<input id="input_file" multiple="multiple" type="file" style="display: none;"> <span
-				style="font-size: 10px; color: gray;">※첨부파일은 최대 10개까지 등록이 가능합니다.</span>
-			<div class="data_file_txt" id="data_file_txt" style="margin: 40px;">
-				<span>첨부 파일</span> <br />
-				<div id="articlefileChange"></div>
+		
+		<!-- notice 영역 -->
+		<div class="notice-layout">
+			<div class="notice-con">
+			
+				<!-- 상단 영역 -->
+				<div class="notice-filter-layout">
+					<!-- 검색 영역 -->
+					<div class="notice-filter-search-box">
+						<select id="notice-filter">
+						    <option value=""></option>
+						</select>
+						<input type="text" id="notice-search" placeholder="검색어를 입력하세요.">
+					</div>
+					
+					<!-- 버튼 영역 -->
+					<div class="notice-filter-button-box">
+						<div class="notice-filter-reset">초기화</div>
+						<div class="notice-filter-select">등록</div>
+					</div>
+				</div>
+				
+				<!-- 중단 영역 -->
+				<div class="notice-list-layout">
+					<table class="notice-list-table">
+						<thead>
+							<tr>
+								<th>순서</th>
+								<th>제목</th>
+								<th>작성자</th>
+								<th>수정자</th>
+								<th>작성 날짜</th>
+								<th>수정 날짜</th>
+							</tr>
+						</thead>
+						<tbody>
+						</tbody>
+					</table>
+				</div>
+				
+				<!-- notice 페이징 영역 -->
+	        	<div class="notice-page">
+		        	<ul class="notice-paging">
+		        		
+		        	</ul>
+		        </div>
+				
 			</div>
-			<div class="butCl">전송</div>
 		</div>
+	
+	
 		<!-- admin notice js -->
 		<script type="text/javascript" th:src="@{/js/view/admin/sub/notice.js}"></script>
-	
+		<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-rc.0/dist/js/select2.min.js"></script>
 	</div>
 
 </html>

@@ -20,7 +20,7 @@ var userAuthority = 'USER';
 function setLnb() {
 	
 	$.ajax({
-	    url: 'common/lnb/' + userAuthority,
+	    url: '/common/lnb/' + userAuthority,
 	    method: 'GET',
 		dataType: 'json',
 	    success: function (data) {
@@ -64,7 +64,7 @@ function setLnb() {
 				if (item.ctLnbSubYn == 'Y') {
 					
 					$.ajax({
-					    url: 'common/lnbSub/' + item.ctLnbId,
+					    url: '/common/lnbSub/' + item.ctLnbId,
 					    method: 'GET',
 						dataType: 'json',
 					    success: function (subData) {
@@ -125,7 +125,7 @@ function setLnb() {
 /*function setLnbMob() {
 	
 	$.ajax({
-	    url: 'common/lnb',
+	    url: '/common/lnb',
 	    method: 'GET',
 		dataType: 'json',
 	    success: function (data) {
@@ -151,7 +151,7 @@ function setLnb() {
 				if (item.ctLnbSubYn == 'Y') {
 					
 					$.ajax({
-					    url: 'common/lnbSub/' + item.ctLnbId,
+					    url: '/common/lnbSub/' + item.ctLnbId,
 					    method: 'GET',
 						dataType: 'json',
 					    success: function (subData) {
@@ -210,7 +210,7 @@ function setLnb() {
 // 모바일 lnb 설정
 function setLnbMob() {
     $.ajax({
-        url: 'common/lnb/' + userAuthority,
+        url: '/common/lnb/' + userAuthority,
         method: 'GET',
         dataType: 'json',
         success: function (data) {
@@ -235,7 +235,7 @@ function setLnbMob() {
 
                 if (item.ctLnbSubYn == 'Y') {
                     $.ajax({
-                        url: 'common/lnbSub/' + item.ctLnbId,
+                        url: '/common/lnbSub/' + item.ctLnbId,
                         method: 'GET',
                         dataType: 'json',
                         success: function (subData) {

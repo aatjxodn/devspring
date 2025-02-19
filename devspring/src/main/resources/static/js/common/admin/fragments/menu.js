@@ -15,7 +15,7 @@ var userAuthority = 'ADMIN';
 // 모바일 lnb 설정
 function setLnbMob() {
     $.ajax({
-        url: 'common/lnb/' + userAuthority,
+        url: '/common/lnb/' + userAuthority,
         method: 'GET',
         dataType: 'json',
         success: function (data) {
@@ -40,7 +40,7 @@ function setLnbMob() {
 
                 if (item.ctLnbSubYn == 'Y') {
                     $.ajax({
-                        url: 'common/lnbSub/' + item.ctLnbId,
+                        url: '/common/lnbSub/' + item.ctLnbId,
                         method: 'GET',
                         dataType: 'json',
                         success: function (subData) {

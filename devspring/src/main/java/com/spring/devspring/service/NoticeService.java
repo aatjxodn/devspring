@@ -11,6 +11,7 @@ import org.springframework.beans.factory.annotation.Value;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
+import com.spring.devspring.dto.NoticeDTO;
 import com.spring.devspring.dto.NoticeFileDTO;
 import com.spring.devspring.dto.PagingDTO;
 import com.spring.devspring.exception.CustomException;
@@ -35,34 +36,37 @@ public class NoticeService {
     private final NoticeMapper noticeMapper;
     private final NoticeFileMapper noticeFileMapper;
 	
+    // notices 조회
 	public LinkedHashMap<String, Object> getNotices(Map<String, Object> params) {
 		
 		PagingDTO page = new PagingDTO();
 		LinkedHashMap<String, Object> map = new LinkedHashMap<>();
 		
-		String dd = (String) params.get("nowPage"); // params에서 dd 값 가져오기
-	    int nowPage = 1;
+		int nowPage = Integer.parseInt(params.get("nowPage").toString()); // params에서 dd 값 가져오기
 	    
-	    try {
-	        if (dd != null && !dd.isEmpty()) {
-	            nowPage = Integer.parseInt(dd); // 문자열을 정수로 변환
-	        }
-	    } catch (NumberFormatException e) {
-	    	throw new CustomException("[boards 조회 error 발생]", ErrorCode.Internal_Server_Error);
-	    }
+	    int selectBoardListTotal = this.noticeMapper.count();
 	    
-	    int selectBoardListTotal = this.noticeMapper.selectBoardListTotal();
-		
+		page.setNumPerPage(50);
 		page.setNowPage(nowPage);
 		page.setPagesLimit(page, selectBoardListTotal);
 		
-		map.put("page", page);
-		map.put("selectBoardList", this.noticeMapper.selectBoardList(page.getBegin(), page.getEnd()));
-		map.put("selectBoardListTotal", selectBoardListTotal);
+		map.put("noticePage", page);
+		map.put("noticeList", this.noticeMapper.findAll(page.getBegin(), page.getEnd()));
 		
 		return map;
 	}
+	
+	// notice 조회
+//	public NoticeDTO getNotice(int ctNoticeIdx) {
+//		return this.noticeMapper.findByCtNoticeIdx(ctNoticeIdx);
+//	}
+	
+	// notice 조회
+	public NoticeDTO getNotice(int ctNoticeIdx) {
+		return this.noticeMapper.findByCtNoticeIdx(ctNoticeIdx);
+	}
 
+	// notice file upload
     public void getFileUpload(MultipartFile files) throws IOException {
     	
         if (files.isEmpty()) {
@@ -91,5 +95,6 @@ public class NoticeService {
         // 데이터베이스에 파일 정보 저장 
         this.noticeFileMapper.save(file);
     }
+
 
 }

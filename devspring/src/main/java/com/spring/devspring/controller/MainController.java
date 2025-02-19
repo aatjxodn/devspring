@@ -54,7 +54,7 @@ public class MainController {
 	}
 	
 	
-	// admin -----------------------------------------------------------------------------------------------------------------
+	// Admin -----------------------------------------------------------------------------------------------------------------
 	// Admin
 	@GetMapping("/admin")
 	public String admin() {
@@ -70,6 +70,11 @@ public class MainController {
 	public String adminNew() {
 		return "view/admin/sub/userList";
 	}
+	// test board
+	@GetMapping("/board")
+	public String board() {
+		return "view/user/sub/board";
+	}
 	// Admin Notice
 	@GetMapping("/notice")
 	public String adminNotice() {
@@ -79,11 +84,6 @@ public class MainController {
 	
 	
 	// test -----------------------------------------------------------------------------------------------------------------
-	// test board
-	@GetMapping("/board")
-	public String board() {
-		return "view/user/sub/board";
-	}
 	// test
 	@GetMapping("/adminTest")
 	public String adminTest() {
