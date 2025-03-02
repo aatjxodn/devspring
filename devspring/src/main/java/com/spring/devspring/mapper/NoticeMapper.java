@@ -15,5 +15,7 @@ public interface NoticeMapper {
 	int count();
 	// notice 조회
 	NoticeDTO findByCtNoticeIdx(int ctNoticeIdx);
+	// notice 등록
+	void insertNotice(NoticeDTO params);
 
 }

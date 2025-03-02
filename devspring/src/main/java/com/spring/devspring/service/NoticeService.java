@@ -2,12 +2,16 @@ package com.spring.devspring.service;
 
 import java.io.File;
 import java.io.IOException;
+import java.nio.file.Files;
+import java.nio.file.Path;
+import java.nio.file.Paths;
+import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.UUID;
 
-import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.beans.factory.annotation.Value;
+import org.springframework.http.ResponseEntity;
 import org.springframework.stereotype.Service;
 import org.springframework.web.multipart.MultipartFile;
 
@@ -39,27 +43,22 @@ public class NoticeService {
     // notices 조회
 	public LinkedHashMap<String, Object> getNotices(Map<String, Object> params) {
 		
-		PagingDTO page = new PagingDTO();
+		PagingDTO noticePage = new PagingDTO();
 		LinkedHashMap<String, Object> map = new LinkedHashMap<>();
 		
 		int nowPage = Integer.parseInt(params.get("nowPage").toString()); // params에서 dd 값 가져오기
 	    
 	    int selectBoardListTotal = this.noticeMapper.count();
 	    
-		page.setNumPerPage(50);
-		page.setNowPage(nowPage);
-		page.setPagesLimit(page, selectBoardListTotal);
+	    noticePage.setNumPerPage(50);
+	    noticePage.setNowPage(nowPage);
+	    noticePage.setPagesLimit(noticePage, selectBoardListTotal);
 		
-		map.put("noticePage", page);
-		map.put("noticeList", this.noticeMapper.findAll(page.getBegin(), page.getEnd()));
+		map.put("noticePage", noticePage);
+		map.put("noticeList", this.noticeMapper.findAll(noticePage.getBegin(), noticePage.getEnd()));
 		
 		return map;
 	}
-	
-	// notice 조회
-//	public NoticeDTO getNotice(int ctNoticeIdx) {
-//		return this.noticeMapper.findByCtNoticeIdx(ctNoticeIdx);
-//	}
 	
 	// notice 조회
 	public NoticeDTO getNotice(int ctNoticeIdx) {
@@ -84,9 +83,10 @@ public class NoticeService {
 
         // 파일 엔티티 생성
         NoticeFileDTO file = NoticeFileDTO.builder()
-                .orgNm(origName)
-                .savedNm(savedName)
-                .savedPath(savedPath)
+                .ctNoticeFileOriginalName(origName)
+                .ctNoticeFileSavedName(savedName)
+                .ctNoticeFileSavedPath(savedPath)
+                .ctNoticeFileCreateTime(LocalDateTime.now())
                 .build();
 
         // 실제로 로컬에 uuid를 파일명으로 저장
@@ -95,6 +95,41 @@ public class NoticeService {
         // 데이터베이스에 파일 정보 저장 
         this.noticeFileMapper.save(file);
     }
+
+    // notice image upload
+	public ResponseEntity<?> getImageUpload(MultipartFile file) {
+		try {
+            // 업로드 파일의 이름
+            String originalFileName = file.getOriginalFilename();
+            // 업로드 파일의 확장자
+            String fileExtension = originalFileName.substring(originalFileName.lastIndexOf("."));
+            // 업로드 된 파일이 중복될 수 있어서 파일 이름 재설정
+            String reFileName = UUID.randomUUID().toString() + fileExtension;
+            // 업로드 경로에 파일명을 변경하여 저장
+            file.transferTo(new File(noticeImageDir, reFileName));
+            // 파일이름을 재전송
+            return ResponseEntity.ok(reFileName);
+            
+        }catch (Exception e) {
+            e.printStackTrace();
+            return ResponseEntity.badRequest().body("업로드 에러");
+        }
+		
+	}
+
+	// notice image delete
+	public void getImageDelete(String file) {
+        try {
+            Path path = Paths.get(noticeImageDir, file);
+            Files.delete(path);
+        }catch (Exception e) {
+            e.printStackTrace();
+        }
+	}
+
+	public void getNoticeInsert(NoticeDTO params) {
+		this.noticeMapper.insertNotice(params);
+	}
 
 
 }

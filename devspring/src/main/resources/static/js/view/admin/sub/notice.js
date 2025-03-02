@@ -76,7 +76,7 @@ function noticeList(i) {
 				    noticeTbody.append(noticeTbodyTr);
 					
 					noticeTbodyTr.dblclick(function() {
-						location.href='/notice/details/' + item.ctNoticeIdx;
+						location.href='/notice/' + item.ctNoticeIdx;
 					});
 				});
 				
@@ -131,4 +131,21 @@ function noticeList(i) {
 			}
 	  });
 }
+
+// 초기화 클릭 시
+$('.notice-filter-reset').click(function() {
+	$('#notice-filter').val('').trigger('change');
+	$('#notice-search').val('');
+});
+
+// 등록 클릭 시
+$('.notice-filter-insert').click(function() {
+	location.href='/noticeWrite';
+});
+
+// 조회 클릭 시
+$('.notice-filter-select').click(function() {
+	noticeList();
+});
+
 

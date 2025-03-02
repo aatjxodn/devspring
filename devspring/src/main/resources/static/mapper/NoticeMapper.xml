@@ -10,7 +10,7 @@
 			ROW_NUMBER() OVER (ORDER BY CT_NOTICE_IDX) AS roNum,
 			CT_NOTICE_IDX AS ctNoticeIdx,
 			CT_NOTICE_SUBJECT AS ctNoticeSubject,
-			CT_NOTICE_CONTENT AS ctNoticeSubject,
+			CT_NOTICE_CONTENT AS ctNoticeContent,
 			CT_NOTICE_AUTHOR AS ctNoticeAuthor,
 			CT_NOTICE_MODIFIER AS ctNoticeModifier,
 			CT_NOTICE_CREATE_TIME AS ctNoticeCreateTime,
@@ -28,7 +28,7 @@
         SELECT
 			CT_NOTICE_IDX AS ctNoticeIdx,
 			CT_NOTICE_SUBJECT AS ctNoticeSubject,
-			CT_NOTICE_CONTENT AS ctNoticeSubject,
+			CT_NOTICE_CONTENT AS ctNoticeContent,
 			CT_NOTICE_AUTHOR AS ctNoticeAuthor,
 			CT_NOTICE_MODIFIER AS ctNoticeModifier,
 			CT_NOTICE_CREATE_TIME AS ctNoticeCreateTime,
@@ -36,5 +36,10 @@
 		FROM CT_NOTICE
 		WHERE CT_NOTICE_IDX = #{ctNoticeIdx}
     </select>
+    
+    <insert id="insertNotice" parameterType="com.spring.devspring.dto.NoticeDTO">
+    	INSERT INTO CT_NOTICE(CT_NOTICE_SUBJECT, CT_NOTICE_CONTENT, CT_NOTICE_AUTHOR, CT_NOTICE_MODIFIER, CT_NOTICE_CREATE_TIME, CT_NOTICE_UPDATE_TIME)
+    	VALUES(#{ctNoticeSubject}, #{ctNoticeContent}, #{ctNoticeAuthor}, '', NOW(), NOW())
+    </insert>
     
 </mapper>

@@ -80,6 +80,11 @@ public class MainController {
 	public String adminNotice() {
 		return "view/admin/sub/notice";
 	}
+	// Admin Notice
+	@GetMapping("/noticeWrite")
+	public String adminNoticeWrite() {
+		return "view/admin/sub/noticeWrite";
+	}
 	
 	
 	
