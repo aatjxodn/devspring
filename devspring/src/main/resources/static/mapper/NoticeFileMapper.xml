@@ -6,8 +6,8 @@
 <mapper namespace="com.spring.devspring.mapper.NoticeFileMapper">
 
 	<insert id="save" parameterType="com.spring.devspring.dto.NoticeFileDTO">
-		INSERT INTO CT_NOTICE_FILE(CT_NOTICE_FILE_ORIGINAL_NAME, CT_NOTICE_FILE_SAVED_NAME, CT_NOTICE_FILE_SAVED_PATH)
-		VALUES(#{orgNm},#{savedNm},#{savedPath})
+		INSERT INTO CT_NOTICE_FILE(CT_NOTICE_IDX, CT_NOTICE_FILE_ORIGINAL_NAME, CT_NOTICE_FILE_SAVED_NAME, CT_NOTICE_FILE_SAVED_PATH, CT_NOTICE_FILE_CREATE_TIME)
+		VALUES(#{ctNoticeIdx}, #{ctNoticeFileOriginalName},#{ctNoticeFileSavedName},#{ctNoticeFileSavedPath}, #{ctNoticeFileCreateTime})
 	</insert>
 
     

@@ -173,7 +173,38 @@ $('.noticeWrite-filter-insert').click(function() {
 		dataType: 'json',
 		contentType: 'application/json',
 		success: function(data) {
-			console.log(JSON.stringify(data));
+			
+			if (fileCount > 0) {
+				var formData = new FormData();
+				formData.append("ctNoticeIdx", data.ctNoticeIdx);
+				for (var x = 0; x < content_files.length; x++) {
+					// 삭제 안한것만 담아 준다. 
+					if (!content_files[x].is_delete) {
+						formData.append("files", content_files[x]);
+					}
+				}
+				
+				$.ajax({
+					type: "POST",
+					enctype: "multipart/form-data",
+					url: "/notice/fileUpload",
+					data: formData,
+					processData: false,
+					contentType: false,
+					success: function(data) {
+						
+					},
+					error: function(jqXHR) {
+						if (jqXHR.responseJSON) {
+							alert(jqXHR.responseJSON.error + " : " + jqXHR.responseJSON.status + ", " + jqXHR.responseJSON.message);
+							console.log(jqXHR.responseJSON);
+						} else {
+							alert("에러 메세지를 찾을 수 없습니다.");
+						}
+					}
+				});
+			}
+			
 		},
 		error: function(jqXHR) {
 			if (jqXHR.responseJSON) {
@@ -191,33 +222,3 @@ $('.noticeWrite-filter-insert').click(function() {
 $('.noticeWrite-filter-back').click(function() {
 	history.back();
 });
-
-/*if (fileCount > 0) {
-	var formData = new FormData();
-	for (var x = 0; x < content_files.length; x++) {
-		// 삭제 안한것만 담아 준다. 
-		if (!content_files[x].is_delete) {
-			formData.append("files", content_files[x]);
-		}
-	}
-	
-	$.ajax({
-		type: "POST",
-		enctype: "multipart/form-data",
-		url: "/notice/fileUpload",
-		data: formData,
-		processData: false,
-		contentType: false,
-		success: function(data) {
-			
-		},
-		error: function(jqXHR) {
-			if (jqXHR.responseJSON) {
-				alert(jqXHR.responseJSON.error + " : " + jqXHR.responseJSON.status + ", " + jqXHR.responseJSON.message);
-				console.log(jqXHR.responseJSON);
-			} else {
-				alert("에러 메세지를 찾을 수 없습니다.");
-			}
-		}
-	});
-}*/

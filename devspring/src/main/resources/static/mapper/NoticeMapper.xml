@@ -37,9 +37,9 @@
 		WHERE CT_NOTICE_IDX = #{ctNoticeIdx}
     </select>
     
-    <insert id="insertNotice" parameterType="com.spring.devspring.dto.NoticeDTO">
-    	INSERT INTO CT_NOTICE(CT_NOTICE_SUBJECT, CT_NOTICE_CONTENT, CT_NOTICE_AUTHOR, CT_NOTICE_MODIFIER, CT_NOTICE_CREATE_TIME, CT_NOTICE_UPDATE_TIME)
-    	VALUES(#{ctNoticeSubject}, #{ctNoticeContent}, #{ctNoticeAuthor}, '', NOW(), NOW())
-    </insert>
+    <insert id="insertNotice" parameterType="com.spring.devspring.dto.NoticeDTO" useGeneratedKeys="true" keyProperty="ctNoticeIdx">
+    INSERT INTO CT_NOTICE (CT_NOTICE_SUBJECT, CT_NOTICE_CONTENT, CT_NOTICE_AUTHOR, CT_NOTICE_MODIFIER, CT_NOTICE_CREATE_TIME, CT_NOTICE_UPDATE_TIME)
+    VALUES (#{ctNoticeSubject}, #{ctNoticeContent}, #{ctNoticeAuthor}, '', NOW(), NOW())
+</insert>
     
 </mapper>

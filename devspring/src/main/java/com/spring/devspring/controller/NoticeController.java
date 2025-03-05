@@ -32,6 +32,7 @@ public class NoticeController {
 	private final NoticeService noticeService;
 	
 	// notices 조회
+	@ResponseStatus(HttpStatus.OK)
 	@GetMapping("/notices")
 	@ResponseBody
 	public LinkedHashMap<String, Object> getNotices(@RequestParam(required = false) Map<String, Object> params) {
@@ -39,6 +40,7 @@ public class NoticeController {
 	}
 	
 	// notice 조회
+	@ResponseStatus(HttpStatus.OK)
 	@GetMapping("/{ctNoticeIdx}")
 	public String getNotice(@PathVariable("ctNoticeIdx") int ctNoticeIdx, Model model) {
 		NoticeDTO notice = this.noticeService.getNotice(ctNoticeIdx);
@@ -47,19 +49,23 @@ public class NoticeController {
 	}
 	
 	// notice 등록
-	@ResponseStatus(code = HttpStatus.NO_CONTENT)
+	@ResponseStatus(HttpStatus.CREATED)
 	@PostMapping("/notice")
 	@ResponseBody
-	public void getNoticeInsert(@RequestBody(required = false) NoticeDTO params) {
-		this.noticeService.getNoticeInsert(params);
+	public ResponseEntity<NoticeDTO> getNoticeInsert(@RequestBody NoticeDTO params) {
+	    NoticeDTO insertedNotice = noticeService.getNoticeInsert(params);
+	    if (insertedNotice != null) {
+	        return ResponseEntity.status(HttpStatus.CREATED).body(insertedNotice);
+	    }
+	    return ResponseEntity.status(HttpStatus.BAD_REQUEST).build();
 	}
 	
 	// notice 다중 파일 업로드
 	@PostMapping("/fileUpload")
 	@ResponseBody
-	public void getFileUpload(@RequestParam("files") List<MultipartFile> files) throws IOException {
+	public void getFileUpload(@RequestParam("files") List<MultipartFile> files, @RequestParam("ctNoticeIdx") int ctNoticeIdx) throws IOException {
 		for (MultipartFile multipartFile : files) {
-			this.noticeService.getFileUpload(multipartFile);
+			this.noticeService.getFileUpload(multipartFile, ctNoticeIdx);
         }
 	}
 	

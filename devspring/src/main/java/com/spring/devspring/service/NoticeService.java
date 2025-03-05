@@ -66,7 +66,7 @@ public class NoticeService {
 	}
 
 	// notice file upload
-    public void getFileUpload(MultipartFile files) throws IOException {
+    public void getFileUpload(MultipartFile files, int ctNoticeIdx) throws IOException {
     	
         if (files.isEmpty()) {
             throw new CustomException("[Notice 파일 para가 없습니다.]", ErrorCode.Bad_Request);
@@ -83,6 +83,7 @@ public class NoticeService {
 
         // 파일 엔티티 생성
         NoticeFileDTO file = NoticeFileDTO.builder()
+        		.ctNoticeIdx(ctNoticeIdx)
                 .ctNoticeFileOriginalName(origName)
                 .ctNoticeFileSavedName(savedName)
                 .ctNoticeFileSavedPath(savedPath)
@@ -127,9 +128,13 @@ public class NoticeService {
         }
 	}
 
-	public void getNoticeInsert(NoticeDTO params) {
-		this.noticeMapper.insertNotice(params);
-	}
+	public NoticeDTO getNoticeInsert(NoticeDTO notice) {
+        int result = noticeMapper.insertNotice(notice); // 삽입 실행 (결과는 1 또는 0)
+        if (result > 0) {
+            return notice; // ID가 자동으로 설정됨
+        }
+        return null; // 실패 시 null 반환
+    }
 
 
 }
