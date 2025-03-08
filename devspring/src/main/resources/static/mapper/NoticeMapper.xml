@@ -16,6 +16,7 @@
 			CT_NOTICE_CREATE_TIME AS ctNoticeCreateTime,
 			CT_NOTICE_UPDATE_TIME AS ctNoticeUpdateTime
 		FROM CT_NOTICE
+		ORDER BY CT_NOTICE_IDX DESC
 		LIMIT #{begin},#{end}
     </select>
     
@@ -24,7 +25,7 @@
 		FROM CT_NOTICE
     </select>
     
-        <select id="findByCtNoticeIdx" resultType="com.spring.devspring.dto.NoticeDTO">
+    <select id="findByCtNoticeIdx" resultType="com.spring.devspring.dto.NoticeDTO">
         SELECT
 			CT_NOTICE_IDX AS ctNoticeIdx,
 			CT_NOTICE_SUBJECT AS ctNoticeSubject,

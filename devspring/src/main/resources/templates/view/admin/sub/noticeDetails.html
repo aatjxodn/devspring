@@ -4,7 +4,46 @@
 	layout:decorate="~{common/admin/layout/layout}">
 
 	<div layout:fragment="content">
-		<span th:text="${notice.ctNoticeSubject}"></span>
+		
+		<!-- noticeDetails 영역 -->
+		<div class="noticeDetails-layout">
+			<div class="noticeDetails-con">
+			
+				<!-- 상단 영역 -->
+				<div class="noticeDetails-filter-layout">
+					<!-- 제목 영역 -->
+					<div class="noticeDetails-filter-search-box">
+						<input type="text" th:value="${notice.ctNoticeSubject}" id="noticeWrite-search" placeholder="제목을 입력하세요." disabled="disabled">
+					</div>
+					
+					<!-- 버튼 영역 -->
+					<div class="noticeDetails-filter-button-box">
+						<div class="noticeDetails-filter-back">돌아가기</div>
+						<div class="noticeDetails-filter-insert">수정</div>
+					</div>
+				</div>
+				
+				<!-- 중단 영역 -->
+				<div class="noticeDetails-content-layout">
+				    <div th:utext="${notice.ctNoticeContent}"></div>
+				</div>
+				
+				<div class="noticeDetails-file-layout">
+					<div>
+						<button id="noticeDetails-file-insert" type="button">파일 추가</button>
+						<input id="noticeDetails-file" multiple="multiple" type="file" style="display: none;">
+					</div>
+					<div>
+						<div class="noticeDetails-file-list"></div>
+					</div>
+				</div>
+				
+			</div>
+		</div>
+		
+		<!-- admin noticeDetails js -->
+		<script type="text/javascript" th:src="@{/js/view/admin/sub/noticeDetails.js}"></script>
+		
 	</div>
 
 </html>

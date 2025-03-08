@@ -5,8 +5,10 @@ import java.io.IOException;
 import java.nio.file.Files;
 import java.nio.file.Path;
 import java.nio.file.Paths;
+import java.security.Principal;
 import java.time.LocalDateTime;
 import java.util.LinkedHashMap;
+import java.util.List;
 import java.util.Map;
 import java.util.UUID;
 
@@ -21,6 +23,10 @@ import com.spring.devspring.dto.PagingDTO;
 import com.spring.devspring.exception.CustomException;
 import com.spring.devspring.exception.ErrorCode;
 import com.spring.devspring.mapper.NoticeMapper;
+
+import groovyjarjarantlr4.v4.parse.ANTLRParser.throwsSpec_return;
+import jakarta.servlet.http.HttpServletRequest;
+
 import com.spring.devspring.mapper.NoticeFileMapper;
 
 import lombok.RequiredArgsConstructor;
@@ -64,8 +70,20 @@ public class NoticeService {
 	public NoticeDTO getNotice(int ctNoticeIdx) {
 		return this.noticeMapper.findByCtNoticeIdx(ctNoticeIdx);
 	}
+	
+	// notice 등록
+	public NoticeDTO getNoticeInsert(NoticeDTO notice, HttpServletRequest request) {
+		
+		notice.setCtNoticeAuthor(request.getSession().getAttribute("ctUserName").toString());
+		
+        int result = noticeMapper.insertNotice(notice); // 삽입 실행 (결과는 1 또는 0)
+        if (result == 0) {
+            throw new CustomException("[notice 등록에 실패했습니다.]", ErrorCode.Internal_Server_Error);
+        }
+        return notice;
+    }
 
-	// notice file upload
+	// notice 파일 업로드
     public void getFileUpload(MultipartFile files, int ctNoticeIdx) throws IOException {
     	
         if (files.isEmpty()) {
@@ -97,7 +115,7 @@ public class NoticeService {
         this.noticeFileMapper.save(file);
     }
 
-    // notice image upload
+    // notice 이미지 업로드
 	public ResponseEntity<?> getImageUpload(MultipartFile file) {
 		try {
             // 업로드 파일의 이름
@@ -118,7 +136,7 @@ public class NoticeService {
 		
 	}
 
-	// notice image delete
+	// notice 이미지 삭제
 	public void getImageDelete(String file) {
         try {
             Path path = Paths.get(noticeImageDir, file);
@@ -128,13 +146,10 @@ public class NoticeService {
         }
 	}
 
-	public NoticeDTO getNoticeInsert(NoticeDTO notice) {
-        int result = noticeMapper.insertNotice(notice); // 삽입 실행 (결과는 1 또는 0)
-        if (result > 0) {
-            return notice; // ID가 자동으로 설정됨
-        }
-        return null; // 실패 시 null 반환
-    }
+	// noticeFile 상세정보
+	public List<NoticeFileDTO> getNoticeFile(int ctNoticeIdx) {
+		return this.noticeFileMapper.findByCtNoticeIdx(ctNoticeIdx);
+	}
 
 
 }

@@ -158,12 +158,10 @@ $('.noticeWrite-filter-insert').click(function() {
 	
 	var ctNoticeSubject = $('#noticeWrite-search').val();
 	var ctNoticeContent = $('#noticeWrite-summernote').val();
-	var ctNoticeAuthor = '서태우';
 	
 	var params = {
 		'ctNoticeSubject': ctNoticeSubject,
-		'ctNoticeContent': ctNoticeContent,
-		'ctNoticeAuthor': ctNoticeAuthor
+		'ctNoticeContent': ctNoticeContent
 	}
 	
 	$.ajax({
@@ -204,6 +202,8 @@ $('.noticeWrite-filter-insert').click(function() {
 					}
 				});
 			}
+			
+			location.href='/notice';
 			
 		},
 		error: function(jqXHR) {

@@ -9,6 +9,19 @@
 		INSERT INTO CT_NOTICE_FILE(CT_NOTICE_IDX, CT_NOTICE_FILE_ORIGINAL_NAME, CT_NOTICE_FILE_SAVED_NAME, CT_NOTICE_FILE_SAVED_PATH, CT_NOTICE_FILE_CREATE_TIME)
 		VALUES(#{ctNoticeIdx}, #{ctNoticeFileOriginalName},#{ctNoticeFileSavedName},#{ctNoticeFileSavedPath}, #{ctNoticeFileCreateTime})
 	</insert>
+	
+	<select id="findByCtNoticeIdx" resultType="com.spring.devspring.dto.NoticeFileDTO">
+        SELECT
+			CT_NOTICE_FILE_IDX AS ctNoticeFileIdx,
+			CT_NOTICE_IDX AS ctNoticeIdx, 
+			CT_NOTICE_FILE_ORIGINAL_NAME AS ctNoticeFileOriginalName,
+			CT_NOTICE_FILE_SAVED_NAME AS ctNoticeFileSavedName,
+			CT_NOTICE_FILE_SAVED_PATH AS ctNoticeFileSavedPath,
+			CT_NOTICE_FILE_CREATE_TIME AS ctNoticeFileCreateTime
+		FROM ct_notice_file
+		WHERE CT_NOTICE_IDX = #{ctNoticeIdx}
+    </select>
+	
 
     
 </mapper>
